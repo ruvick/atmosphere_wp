@@ -87,8 +87,10 @@
 	<div class="contacts-sec__item">
 		<ul>
 			<li>Контакты:</li>
-			<li><a href="tel:79005555155" class="contacts-sec__phone">7 (900) 5555-155</a></li>
-			<li><a href="mailto:info@bestatmosfera.ru" class="contacts-sec__email">info@bestatmosfera.ru</a></li>
+			<? $tel = carbon_get_theme_option("as_phone_1"); 
+			if (!empty($tel)){?><li><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts-sec__phone"><? echo $tel; ?></a></li><?}?> 
+			<? $mail = carbon_get_theme_option("as_email");
+			if (!empty($mail)) { ?><li><a href="mailto:<? echo $mail; ?>" class="contacts-sec__email"><? echo $mail; ?></a></li><? } ?>
 		</ul>
 		<div class="contacts-sec__soc-block-icon soc-block-icon">
 			<a href="#" class="soc-block-icon-link soc-icon-1"></a>

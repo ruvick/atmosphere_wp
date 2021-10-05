@@ -3425,7 +3425,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   float: left;
   width: 12.43px;
   height: 15.56px;
-  margin-top: 6px;
+  /*margin-top: 6px;*/
   margin-right: 12px;
   background-size: 100%;
   background-position: 0 0;

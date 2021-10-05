@@ -220,48 +220,8 @@
 										</div>
 									</section>
 
-									<section id="contacts-sec" class="contacts-sec">
-										<div class="_container">
-											<div id="map" class="contacts-sec__map"></div>
-											<div class="contacts-sec__row d-flex">
-												<div class="contacts-sec__item">
-													<ul>
-														<li>Адрес:</li>
-														<li>Курская область,</li>
-														<li>г. Железногорск,</li>
-														<li>ул. Гайдара, д. 5</li>
-													</ul>
-												</div>
-												<div class="contacts-sec__item">
-													<ul>
-														<li>Часы работы клуба:</li>
-														<li>будни: 08:00 – 22:00,</li>
-														<li>выходные: 09:00 – 21:00</li>
-													</ul>
-												</div>
-												<div class="contacts-sec__item">
-													<ul>
-														<li>Часы работы отдела продаж:</li>
-														<li>ежедневно: 09:00 – 21:00</li>
-													</ul>
-												</div>
-												<div class="contacts-sec__item">
-													<ul>
-														<li>Контакты:</li>
-														<li><a href="tel:79005555155" class="contacts-sec__phone">7 (900) 5555-155</a></li>
-														<li><a href="mailto:info@bestatmosfera.ru" class="contacts-sec__email">info@bestatmosfera.ru</a></li>
-													</ul>
-													<div class="contacts-sec__soc-block-icon soc-block-icon">
-														<a href="#" class="soc-block-icon-link soc-icon-1"></a>
-														<a href="#" class="soc-block-icon-link soc-icon-2"></a>
-														<a href="#" class="soc-block-icon-link soc-icon-3"></a>
-														<a href="#" class="soc-block-icon-link soc-icon-4"></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</section>
+	<?php get_template_part('template-parts/contacts-section');?>
 
-								</main>
+</main>
 
-								<?php get_footer(); ?> 
+<?php get_footer(); ?> 

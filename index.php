@@ -201,25 +201,6 @@
 
 									</section>
 
-									<section id="application" class="application">
-										<div class="_container">
-											<h2 class="title">Оставьте заявку и мы Вам перезвоним:</h2>
-											<form action="#" class="application__form form">
-												<div class="application__line form__line">
-													<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Имя"
-													class="input _req">
-													<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Телефон"
-													class="input _phone _req">
-													<button type="submit" class="form__btn btn">Подробнее</button>
-												</div>
-												<p>
-													Нажимая на кнопку «Отправить» Вы принимаете условия политики конфиденциальности <br>
-													в отношении обработки персональных данных
-												</p>
-											</form>
-										</div>
-									</section>
-
 	<?php get_template_part('template-parts/contacts-section');?>
 
 </main>

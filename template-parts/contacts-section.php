@@ -1,3 +1,22 @@
+<section id="application" class="application">
+	<div class="_container">
+		<h2 class="title">Оставьте заявку и мы Вам перезвоним:</h2>
+		<form action="#" class="application__form form">
+			<div class="application__line form__line">
+				<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Имя"
+				class="input _req">
+				<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Телефон"
+				class="input _phone _req">
+				<button type="submit" class="form__btn btn">Подробнее</button>
+			</div>
+			<p>
+				Нажимая на кнопку «Отправить» Вы принимаете условия политики конфиденциальности <br>
+				в отношении обработки персональных данных
+			</p>
+		</form>
+	</div>
+</section>
+
 <section id="contacts-sec" class="contacts-sec">
 	<div class="_container">
 		<div id="map" class="contacts-sec__map"></div>
@@ -9,9 +28,9 @@
 			function init () {
 				var myMap = new ymaps.Map("map", {
         // Координаты центра карты
-        center:[<?php echo carbon_get_theme_option('map_point') ?>],
+        center:[<?php echo carbon_get_theme_option('map_point') ?>], 
         // Масштаб карты
-        zoom: 17,
+        zoom: 18,
         // Выключаем все управление картой
         controls: []
       }); 
@@ -26,9 +45,9 @@
                     // Путь до нашей картинки
                     iconImageHref:  '<?php bloginfo("template_url"); ?>/img/icons/map-marker.svg',  
                     // Размеры иконки
-                    iconImageSize: [65, 65],
+                    iconImageSize: [36, 55],
                     // Смещение верхнего угла относительно основания иконки
-                    iconImageOffset: [-25, -100]
+                    iconImageOffset: [38, -115]
                   });
 
     var clusterer = new ymaps.Clusterer({

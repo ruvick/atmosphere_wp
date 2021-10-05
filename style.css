@@ -4610,6 +4610,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-image: url("img/stock/04.jpg"); }
 
 /* Оформление дефолтных стилей */
+.content h1,
+.content h2 {
+  color: #000;
+}
+
+.content h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+
 .content ul {
   margin-bottom: 35px; 
 }

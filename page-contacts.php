@@ -10,14 +10,8 @@ get_header(); ?>
 <?php get_template_part('template-parts/header-section');?>
 
 <main class="page">
-  <section class="content">
-  <div class="container">
-
-  <?php
-			if ( function_exists('yoast_breadcrumb') ) {
-				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );  
-			}
-			?> 
+  <section class="content recurring">
+  <div class="_container">
 
 	<h1><? the_title();?></h1> 
 
@@ -35,18 +29,18 @@ get_header(); ?>
 		<? $tel = carbon_get_theme_option("as_phones_1"); $tel2 = carbon_get_theme_option("as_phone_2"); if (!empty($tel)){?><li>Тел: <strong><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel; ?></strong></a> <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel2); ?>"><? echo $tel2; ?></strong></a></li><?}?> 
 	</ul>
 
-		<div class="block__map" id="map"></div>
+		<div class="contacts-sec__map" id="map-contacts"></div>
 		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> 
 
 		<script>
 			ymaps.ready(init); 
 
 			function init () {
-				var myMap = new ymaps.Map("map", {
+				var myMap = new ymaps.Map("map-contacts", {
         // Координаты центра карты
         center:[<?php echo carbon_get_theme_option('map_point') ?>],
         // Масштаб карты
-        zoom: 17,
+        zoom: 18,
         // Выключаем все управление картой
         controls: []
       }); 
@@ -61,9 +55,9 @@ get_header(); ?>
                     // Путь до нашей картинки
                     iconImageHref:  '<?php bloginfo("template_url"); ?>/img/icons/map-marker.svg',  
                     // Размеры иконки
-                    iconImageSize: [65, 65],
+                    iconImageSize: [36, 55],
                     // Смещение верхнего угла относительно основания иконки
-                    iconImageOffset: [-25, -100]
+                    iconImageOffset: [38, -115]
                   });
 
     var clusterer = new ymaps.Clusterer({

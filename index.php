@@ -8,13 +8,13 @@
 		<div class="info-index__nuar_blk nuar_blk"></div>
 		<div class="fullscreen__container _container">
 			<div class="info-index__logo"></div>
-			<h4>
+<!-- 			<h4>
 				Пробное посещение <br>
 				БЕСПЛАТНО
-			</h4>
+			</h4> -->
 			<div class="info-index__btn-block d-flex">
 				<a href="#callback" class="info-index__btn _popup-link btn">Связаться с менеджером</a>
-				<a href="club-cards.html" class="info-index__btn-text btn">#В честь открытия скидка на <br> клубные карты</a>
+				<a href="<?php echo get_permalink(26);?>" class="info-index__btn-text btn">#В честь открытия скидка на <br> клубные карты</a>
 			</div>
 		</div>
 		<div class="info-index__soc-block-icon soc-block-icon">

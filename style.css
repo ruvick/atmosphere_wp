@@ -3811,10 +3811,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   min-height: 93vh;
-  padding: 135px 0;
+  /*padding: 135px 0;*/
+  padding: 135px 0 200px 0;
   background-position: center;
 }
 
@@ -3865,9 +3866,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .info-index__btn-text {
   font-size: 23px;
   line-height: 1.2;
-  padding: 25px;
-  background: #272a2d;
-  border: 2px solid #69a71a;
+  padding: 0;
+  background: none;
+  /* border: 2px solid #69a71a; */
+  text-align: left;
 }
 
 .soc-block-icon {

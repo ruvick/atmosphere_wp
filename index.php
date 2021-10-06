@@ -191,6 +191,7 @@
 														</div>
 													</div>
 												</div>
+												<a href="<?php echo get_permalink(36);?>" class="slider-team__btn btn">Все тренеры</a>
 											</div>
 											<div class="swiper-button swiper-button-next"></div>
 											<div class="swiper-button swiper-button-prev"></div>

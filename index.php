@@ -40,9 +40,9 @@
 					<div class="nuar_blk"></div>
 					<div class="about__list-block about__list-block-left d-flex">
 						<ul>
-							<li>Холодные спортивные напитки</li>
-							<li>Горячие спортивные напитки</li>
-							<li>Завтраки</li>
+							<li>Современная среда</li>
+							<li>Новейшее оборудования</li>
+							<li>Система ключ-браслет</li>
 						</ul>
 					</div>
 				</div>
@@ -50,9 +50,9 @@
 					<div class="nuar_blk"></div>
 					<div class="about__list-block about__list-block-right d-flex">
 						<ul>
-							<li>Холодные спортивные напитки</li>
-							<li>Горячие спортивные напитки</li>
-							<li>Завтраки</li>
+							<li>Сайкл-студия</li>
+							<li>Клетка для борьбы</li>
+							<li>Бесплатная питьевая вода</li>
 						</ul>
 					</div>
 				</div>
@@ -63,7 +63,7 @@
 					<div class="about__list-block d-flex">
 						<ul>
 							<li>Косметология</li>
-							<li>Парикмахерские</li>
+							<li>Парикмахерские услуги</li>
 							<li>SPA для двоих</li>
 							<li>Коллариум</li>
 						</ul>
@@ -81,10 +81,7 @@
 					<p class="about__item__subtitle">Более 400м²</p>
 					<div class="about__list-block d-flex">
 						<ul>
-							<li>Холодные спортивные напитки</li>
-							<li>Горячие спортивные напитки</li>
-						</ul>
-						<ul>
+							<li>Горячие, холодные напитки</li>
 							<li>Завтраки</li>
 							<li>Перекусы</li>
 						</ul>

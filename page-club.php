@@ -16,17 +16,12 @@ get_header(); ?>
 		<div class="banner-bg__container _container">
 			<h1 class="title"><? the_title();?></h1>
 			<p class="banner-bg__subtitle">
-				Узнай больше о жизни фитнес клуба <br>
+				Узнай больше о жизни фитнес клуба <br> 
 				Atmosfera
 			</p>
 			<a href="#callback" class="banner-bg__btn _popup-link btn">Связаться с менеджером</a>
 		</div>
-		<div class="info-index__soc-block-icon soc-block-icon">
-			<a href="#" class="soc-block-icon-link soc-icon-1"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-2"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-3"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-4"></a>
-		</div>
+		<?php get_template_part('template-parts/soc-block');?>
 	</section>
 
 	<section id="advant-sec" class="advant-sec recurring">

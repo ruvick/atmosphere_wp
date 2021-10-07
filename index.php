@@ -17,12 +17,7 @@
 				<a href="<?php echo get_permalink(26);?>" class="info-index__btn-text btn">#В честь открытия скидка на <br> клубные карты</a>
 			</div>
 		</div>
-		<div class="info-index__soc-block-icon soc-block-icon">
-			<a href="#" class="soc-block-icon-link soc-icon-1"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-2"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-3"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-4"></a>
-		</div>
+		<?php get_template_part('template-parts/soc-block');?>
 	</section>
 
 	<section id="about" class="about">

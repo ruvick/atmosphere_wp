@@ -21,12 +21,7 @@ get_header(); ?>
 			</p>
 			<a href="#callback" class="banner-bg__btn _popup-link btn">Связаться с менеджером</a>
 		</div>
-		<div class="info-index__soc-block-icon soc-block-icon">
-			<a href="#" class="soc-block-icon-link soc-icon-1"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-2"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-3"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-4"></a>
-		</div>
+		<?php get_template_part('template-parts/soc-block');?>
 	</section>
 
 	<section id="recurring" class="stock-card recurring">

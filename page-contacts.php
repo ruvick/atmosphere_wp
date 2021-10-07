@@ -15,9 +15,15 @@ get_header(); ?>
 
 			<h1><? the_title();?></h1> 
 
-			<ul> 
+			<ul>  
 				<? $org = carbon_get_theme_option("as_company"); if (!empty($org)){?><li>Организация: <strong><? echo $org; ?></strong></li><?}?> 
 				<? $adr = carbon_get_theme_option("as_address"); if (!empty($adr)){?><li>Адрес: <strong><? echo $adr; ?></strong></li><?}?>
+				<li>Часы работы клуба:<? $op_wkdays = carbon_get_theme_option("as_club_opening_weekdays"); 
+				if (!empty($op_wkdays)){?> будни: <? echo $op_wkdays; ?>, <?}?> 
+				<? $op_wkends = carbon_get_theme_option("as_club_opening_weekends"); 
+				if (!empty($op_wkends)){?> выходные: <? echo $op_wkends; ?></li><?}?> 
+				<? $sal_depart = carbon_get_theme_option("as_sales_department"); 
+				if (!empty($sal_depart)){?><li>Часы работы отдела продаж: ежедневно: <? echo $sal_depart; ?></li><?}?> 
 				<? $inn = carbon_get_theme_option("as_inn"); if (!empty($inn)){?><li>ИНН: <strong><? echo $inn; ?></strong></li><?}?>
 				<? $kpp = carbon_get_theme_option("as_kpp"); if (!empty($kpp)){?><li>КПП: <strong><? echo $kpp; ?></strong></li><?}?>
 				<? $ogrn = carbon_get_theme_option("as_orgn"); if (!empty($ogrn)){?><li>ОРГН: <strong><? echo $ogrn; ?></strong></li><?}?>

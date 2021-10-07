@@ -74,31 +74,40 @@
 	<div class="contacts-sec__item">
 		<ul>
 			<li>Часы работы клуба:</li>
-			<li>будни: 08:00 – 22:00,</li>
-			<li>выходные: 09:00 – 21:00</li>
-		</ul>
-	</div>
-	<div class="contacts-sec__item">
-		<ul>
-			<li>Часы работы отдела продаж:</li>
-			<li>ежедневно: 09:00 – 21:00</li>
-		</ul>
-	</div>
-	<div class="contacts-sec__item">
-		<ul>
-			<li>Контакты:</li>
-			<? $tel = carbon_get_theme_option("as_phone_1"); 
-			if (!empty($tel)){?><li><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts-sec__phone"><? echo $tel; ?></a></li><?}?> 
-			<? $mail = carbon_get_theme_option("as_email");
-			if (!empty($mail)) { ?><li><a href="mailto:<? echo $mail; ?>" class="contacts-sec__email"><? echo $mail; ?></a></li><? } ?>
-		</ul>
-		<div class="contacts-sec__soc-block-icon soc-block-icon">
-			<a href="#" class="soc-block-icon-link soc-icon-1"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-2"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-3"></a>
-			<a href="#" class="soc-block-icon-link soc-icon-4"></a>
+			<? $op_wkdays = carbon_get_theme_option("as_club_opening_weekdays"); 
+			if (!empty($op_wkdays)){?>
+				<li>будни: <? echo $op_wkdays; ?>,</li>
+				<?}?> 
+				<? $op_wkends = carbon_get_theme_option("as_club_opening_weekends"); 
+				if (!empty($op_wkends)){?>
+					<li>выходные: <? echo $op_wkends; ?></li>
+					<?}?> 
+				</ul>
+			</div>
+			<? $sal_depart = carbon_get_theme_option("as_sales_department"); 
+			if (!empty($sal_depart)){?>
+				<div class="contacts-sec__item">
+					<ul>
+						<li>Часы работы отдела продаж:</li>
+						<li>ежедневно: <? echo $sal_depart; ?></li>
+					</ul>
+				</div>
+				<?}?> 
+				<div class="contacts-sec__item">
+					<ul>
+						<li>Контакты:</li>
+						<? $tel = carbon_get_theme_option("as_phone_1"); 
+						if (!empty($tel)){?><li><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts-sec__phone"><? echo $tel; ?></a></li><?}?> 
+						<? $mail = carbon_get_theme_option("as_email");
+						if (!empty($mail)) { ?><li><a href="mailto:<? echo $mail; ?>" class="contacts-sec__email"><? echo $mail; ?></a></li><? } ?>
+					</ul>
+					<div class="contacts-sec__soc-block-icon soc-block-icon">
+						<a href="<?php echo carbon_get_theme_option('as_insta'); ?>" class="soc-block-icon-link soc-icon-1"></a>
+						<a href="<?php echo carbon_get_theme_option('as_vk'); ?>" class="soc-block-icon-link soc-icon-2"></a>
+						<a href="<?php echo carbon_get_theme_option('as_telegr'); ?>" class="soc-block-icon-link soc-icon-3"></a>
+						<a href="<?php echo carbon_get_theme_option('as_whatsapp'); ?>" class="soc-block-icon-link soc-icon-4"></a>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-</div>
-</section>
+	</section>

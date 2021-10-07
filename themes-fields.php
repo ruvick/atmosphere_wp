@@ -37,7 +37,11 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     ->add_tab('Контакты', array(
         Field::make( 'text', 'as_company', __( 'Название' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_schedule', __( 'Режим работы' ) )
+        Field::make( 'text', 'as_club_opening_weekdays', __( 'Часы работы клуба, будни' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_club_opening_weekends', __( 'Часы работы клуба, выходные' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_sales_department', __( 'Часы работы отдела продаж' ) )
           ->set_width(50),
         Field::make( 'text', 'as_phone_1', __( 'Телефон' ) )
           ->set_width(50),

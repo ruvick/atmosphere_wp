@@ -18,18 +18,18 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       // Field::make( 'image', 'as_logo_white', 'Логотип в подвале')
       //   ->set_width(30),
       Field::make('text', 'about_home_title', 'Заголовок на главной'),
-      Field::make('rich_text', 'about_home', 'О нашей компании')
+      // Field::make('rich_text', 'about_home', 'О нашей компании')
     ))
     ->add_tab('Акции', array(
       Field::make('complex', 'complex_promo', 'Выводим блоки с Акциями')
       // ->set_max(3) // Можно будет выбрать только 5 постов
       ->add_fields(array(
         Field::make('image', 'img_promo', 'Фото')
-        ->set_width(30),
+        ->set_width(10),
         Field::make('text', 'title_promo', 'Заголовок')   
-        ->set_width(30),
+        ->set_width(20),
         Field::make('text', 'text_promo', 'Текст')   
-        ->set_width(30),
+        ->set_width(65),
         // Field::make('text', 'link_promo', 'Ссылка')   
         // ->set_width(30),
         ))
@@ -39,19 +39,21 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       // ->set_max(3) // Можно будет выбрать только 5 постов
       ->add_fields(array(
         Field::make('image', 'img_team', 'Фото')
-        ->set_width(30),
+        ->set_width(10),
         Field::make('text', 'surname_team', 'Фамилия')   
-        ->set_width(30),
+        ->set_width(20),
         Field::make('text', 'name_team', 'Имя')   
-        ->set_width(30),
+        ->set_width(20),
         Field::make('text', 'special_team', 'Специализация')   
-        ->set_width(30),
+        ->set_width(40),
         // Field::make('text', 'link_promo', 'Ссылка')   
         // ->set_width(30),
         ))
     ))
     ->add_tab('Контакты', array(
         Field::make( 'text', 'as_company', __( 'Название' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_address', __( 'Адрес' ) )
           ->set_width(50),
         Field::make( 'text', 'as_club_opening_weekdays', __( 'Часы работы клуба, будни' ) )
           ->set_width(50),
@@ -61,8 +63,8 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
           ->set_width(50),
         Field::make( 'text', 'as_phone_1', __( 'Телефон' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_phone_2', __( 'Телефон дополнительный' ) )
-          ->set_width(50),
+        // Field::make( 'text', 'as_phone_2', __( 'Телефон дополнительный' ) )
+        //   ->set_width(50),
         Field::make( 'text', 'as_email', __( 'Email' ) )
           ->set_width(50),
         Field::make( 'text', 'as_email_send', __( 'Email для отправки' ) ) 
@@ -72,8 +74,6 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
         Field::make( 'text', 'as_orgn', __( 'ОРГН' ) )
           ->set_width(50),
         Field::make( 'text', 'as_kpp', __( 'КПП' ) )
-          ->set_width(50),
-        Field::make( 'text', 'as_address', __( 'Адрес' ) )
           ->set_width(50),
         Field::make( 'text', 'as_bik', __( 'БИК' ) )
           ->set_width(50),
@@ -85,8 +85,8 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
           ->set_width(50),
         Field::make( 'text', 'as_insta', __( 'instagram' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_face', __( 'facebook' ) )
-          ->set_width(50),
+        // Field::make( 'text', 'as_face', __( 'facebook' ) )
+        //   ->set_width(50),
         Field::make( 'text', 'as_vk', __( 'Вконтакте' ) )
           ->set_width(50),
         Field::make( 'text', 'as_telegr', __( 'telegram' ) )
@@ -98,25 +98,25 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
         Field::make('text', 'text_map', 'Текст метки карты')
           ->set_width(50),
     ) );
-    Container::make('post_meta', 'ultra_product_cr', 'Характеристики товара')
-    ->show_on_post_type(array( 'ultra'))
-      ->add_fields(array(   
-      Field::make('textarea', 'offer_smile_descr', 'Краткое описание')->set_width(100),
-      // Field::make('text', 'offer_name', 'Название товара')->set_width(30),
-      // Field::make('text', 'offer_label', 'Метка на товаре')->set_width(30),
-      Field::make('text', 'offer_weight', 'Вес')->set_width(50),
-      // Field::make('text', 'offer_allsearch', 'Все артикулы для поиска')->set_width(50),
-      // Field::make('text', 'offer_siries', 'Серия (для сопутствующих)')->set_width(30),
-      Field::make('text', 'offer_sticker', 'Стикер')->set_width(50), 
-      Field::make('text', 'offer_price', 'Цена')->set_width(50),
-      Field::make('text', 'offer_number', 'Колличество')->set_width(50),
-      Field::make('text', 'offer_sku', 'Артикул (Базовый)')->set_width(50),
-      // Field::make('text', 'offer_benefit', 'Выгода')->set_width(50),
-      Field::make('rich_text', 'prod_descrip', 'Описание товара')->set_width(100),
-      Field::make('text', 'offer_calories', 'Калории')->set_width(50),
-      Field::make('text', 'offer_protein', 'Белки')->set_width(50),
-      Field::make('text', 'offer_fats', 'Жиры')->set_width(50),
-      Field::make('text', 'offer_carbohyd', 'Углеводы')->set_width(50),
+    // Container::make('post_meta', 'ultra_product_cr', 'Характеристики товара')
+    // ->show_on_post_type(array( 'ultra'))
+    //   ->add_fields(array(   
+    //   Field::make('textarea', 'offer_smile_descr', 'Краткое описание')->set_width(100),
+    //   // Field::make('text', 'offer_name', 'Название товара')->set_width(30),
+    //   // Field::make('text', 'offer_label', 'Метка на товаре')->set_width(30),
+    //   Field::make('text', 'offer_weight', 'Вес')->set_width(50),
+    //   // Field::make('text', 'offer_allsearch', 'Все артикулы для поиска')->set_width(50),
+    //   // Field::make('text', 'offer_siries', 'Серия (для сопутствующих)')->set_width(30),
+    //   Field::make('text', 'offer_sticker', 'Стикер')->set_width(50), 
+    //   Field::make('text', 'offer_price', 'Цена')->set_width(50),
+    //   Field::make('text', 'offer_number', 'Колличество')->set_width(50),
+    //   Field::make('text', 'offer_sku', 'Артикул (Базовый)')->set_width(50),
+    //   // Field::make('text', 'offer_benefit', 'Выгода')->set_width(50),
+    //   Field::make('rich_text', 'prod_descrip', 'Описание товара')->set_width(100),
+    //   Field::make('text', 'offer_calories', 'Калории')->set_width(50),
+    //   Field::make('text', 'offer_protein', 'Белки')->set_width(50),
+    //   Field::make('text', 'offer_fats', 'Жиры')->set_width(50),
+    //   Field::make('text', 'offer_carbohyd', 'Углеводы')->set_width(50),
 
       // Field::make( 'complex', 'offer_cherecter', "Характеристики товара табы, левая колонка" )
       // ->add_fields( array(
@@ -141,12 +141,12 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       //   Field::make('text', 'mod_picture_id', 'Изображения модификации')->set_width(20),
       // ) ),
         
-      Field::make( 'complex', 'offer_picture', "Галерея товара" )
-      ->add_fields( array(
-        Field::make('image', 'gal_img', 'Изображение' )->set_width(30),
-        Field::make('text', 'gal_img_sku', 'ID для модификации')->set_width(30),
-        Field::make('text', 'gal_img_alt', 'alt и title')->set_width(30)        
-      ) ),
+      // Field::make( 'complex', 'offer_picture', "Галерея товара" )
+      // ->add_fields( array(
+      //   Field::make('image', 'gal_img', 'Изображение' )->set_width(30),
+      //   Field::make('text', 'gal_img_sku', 'ID для модификации')->set_width(30),
+      //   Field::make('text', 'gal_img_alt', 'alt и title')->set_width(30)        
+      // ) ),
 
     //   Field::make('complex', 'complex_analogs', 'Ближайшие аналоги')
     //     ->set_max(4) // Можно будет выбрать только 5 постов
@@ -159,7 +159,7 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     //       ->set_width(33),
     // ))
 
-  ));
+  // ));
 
   // Container::make('post_meta', 'single-galery', 'Характеристики записи')
   // ->show_on_template(array('single-galery.php'))

@@ -22,10 +22,10 @@
 
 	<section id="about" class="about">
 		<div class="_container">
-			<h1>
-				Фитнес-клуб ATMOSFERA создан чтобы помочь вам провести <br>
-				время эффективно и комфортно
-			</h1>
+			<? $aboutht = carbon_get_theme_option('about_home_title');
+			if (!empty($aboutht)) { ?>
+				<h1><?php echo  carbon_get_theme_option('about_home_title'); ?></h1>
+			<? } ?>
 			<div class="card-bg__row d-flex">
 				<div class="about__title-center">
 					<h2 class="title-block">Fitness zone</h2>

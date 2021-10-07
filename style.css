@@ -4112,10 +4112,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .team-card__img {
   position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 345px;
-          flex: 0 1 345px;
-  max-height: 507px;
+/*  -webkit-box-flex: 0;
+  -ms-flex: 0 1 345px;
+  flex: 0 1 345px;*/
+  height: 507px;
   -webkit-filter: grayscale(1);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(1);

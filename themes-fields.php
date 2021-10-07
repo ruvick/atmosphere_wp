@@ -34,6 +34,22 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
         // ->set_width(30),
         ))
     ))
+    ->add_tab('Тренеры', array(
+      Field::make('complex', 'complex_team', 'Выводим карточки тренеров')
+      // ->set_max(3) // Можно будет выбрать только 5 постов
+      ->add_fields(array(
+        Field::make('image', 'img_team', 'Фото')
+        ->set_width(30),
+        Field::make('text', 'surname_team', 'Фамилия')   
+        ->set_width(30),
+        Field::make('text', 'name_team', 'Имя')   
+        ->set_width(30),
+        Field::make('text', 'special_team', 'Специализация')   
+        ->set_width(30),
+        // Field::make('text', 'link_promo', 'Ссылка')   
+        // ->set_width(30),
+        ))
+    ))
     ->add_tab('Контакты', array(
         Field::make( 'text', 'as_company', __( 'Название' ) )
           ->set_width(50),

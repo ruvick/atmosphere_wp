@@ -103,101 +103,34 @@
 		<div class="team__row d-flex">
 			<div class="team__container _container">
 				<div class="slider-team _swiper">
-					<div class="team-card__body slider__slide d-flex">
-						<div class="team-card__img">
-							<div class="nuar_blk"></div>
-							<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/01.jpg?_v=1633466607061" alt=""></picture>
-							</div>
-							<div class="team-card__text">
-								<h3>Абрамова <br> Мария</h3>
-								<p class="team-card__descp">Инструктор групповых программ</p>
-							</div>
-						</div>
-
-						<div class="team-card__body slider__slide d-flex">
-							<div class="team-card__img">
-								<div class="nuar_blk"></div>
-								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/02.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/02.jpg?_v=1633466607061" alt=""></picture>
-								</div>
-								<div class="team-card__text">
-									<h3>Аксана <br> Щеглова</h3>
-									<p class="team-card__descp">Менеджер тренажерного зала и персональный тренер</p>
-								</div>
-							</div>
-
+					<? $team = carbon_get_theme_option('complex_team');
+					if ($team) {
+						$teamIndex = 0;
+						foreach ($team as $item) {
+							?>
 							<div class="team-card__body slider__slide d-flex">
 								<div class="team-card__img">
 									<div class="nuar_blk"></div>
-									<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/03.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/03.jpg?_v=1633466607061" alt=""></picture>
-									</div>
-									<div class="team-card__text">
-										<h3>Королева <br> Анастасия</h3>
-										<p class="team-card__descp">Персональный тренер</p>
-									</div>
+									<img src="<?php echo wp_get_attachment_image_src($item['img_team'], 'large')[0]; ?>" alt="">
 								</div>
+								<div class="team-card__text">
+									<h3><? echo $item['surname_team']; ?> <br> <? echo $item['name_team']; ?></h3>
+									<p class="team-card__descp"><? echo $item['special_team']; ?></p>
+								</div>
+							</div>
+							<?
+							$teamIndex++; 
+						}
+					}
+					?>
+				</div>
+				<a href="<?php echo get_permalink(36);?>" class="slider-team__btn btn">Все тренеры</a>
+			</div>
+			<div class="swiper-button swiper-button-next"></div>
+			<div class="swiper-button swiper-button-prev"></div>
+		</div>
 
-								<div class="team-card__body slider__slide d-flex">
-									<div class="team-card__img">
-										<div class="nuar_blk"></div>
-										<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/04.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/04.jpg?_v=1633466607061" alt=""></picture>
-										</div>
-										<div class="team-card__text">
-											<h3>Александр <br> Горюнов</h3>
-											<p class="team-card__descp">Инструктор тренажерного зала</p>
-										</div>
-									</div>
-
-									<div class="team-card__body slider__slide d-flex">
-										<div class="team-card__img">
-											<div class="nuar_blk"></div>
-											<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/01.jpg?_v=1633466607061" alt=""></picture>
-											</div>
-											<div class="team-card__text">
-												<h3>Абрамова <br> Мария</h3>
-												<p class="team-card__descp">Инструктор групповых программ</p>
-											</div>
-										</div>
-
-										<div class="team-card__body slider__slide d-flex">
-											<div class="team-card__img">
-												<div class="nuar_blk"></div>
-												<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/02.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/02.jpg?_v=1633466607061" alt=""></picture>
-												</div>
-												<div class="team-card__text">
-													<h3>Аксана <br> Щеглова</h3>
-													<p class="team-card__descp">Менеджер тренажерного зала и персональный тренер</p>
-												</div>
-											</div>
-
-											<div class="team-card__body slider__slide d-flex">
-												<div class="team-card__img">
-													<div class="nuar_blk"></div>
-													<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/03.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/03.jpg?_v=1633466607061" alt=""></picture>
-													</div>
-													<div class="team-card__text">
-														<h3>Королева <br> Анастасия</h3>
-														<p class="team-card__descp">Персональный тренер</p>
-													</div>
-												</div>
-
-												<div class="team-card__body slider__slide d-flex">
-													<div class="team-card__img">
-														<div class="nuar_blk"></div>
-														<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/04.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/04.jpg?_v=1633466607061" alt=""></picture>
-														</div>
-														<div class="team-card__text">
-															<h3>Александр <br> Горюнов</h3>
-															<p class="team-card__descp">Инструктор тренажерного зала</p>
-														</div>
-													</div>
-												</div>
-												<a href="<?php echo get_permalink(36);?>" class="slider-team__btn btn">Все тренеры</a>
-											</div>
-											<div class="swiper-button swiper-button-next"></div>
-											<div class="swiper-button swiper-button-prev"></div>
-										</div>
-
-									</section>
+	</section>
 
 	<?php get_template_part('template-parts/contacts-section');?>
 

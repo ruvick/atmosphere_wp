@@ -33,80 +33,60 @@ get_header(); ?>
 		<div class="_container">
 			<h2 class="title">Тренеры</h2>
 			<div class="team-sec__row d-flex">
-				<div class="team-card__body d-flex">
-					<div class="team-card__img">
-						<div class="nuar_blk"></div>
-						<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/01.jpg?_v=1633466607061" alt=""></picture>
-						</div>
-						<div class="team-card__text">
-							<h3>Абрамова <br> Мария</h3>
-							<p class="team-card__descp">Инструктор групповых программ</p>
-						</div>
-					</div>
-					<div class="team-card__body d-flex">
-						<div class="team-card__img">
-							<div class="nuar_blk"></div>
-							<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/02.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/02.jpg?_v=1633466607061" alt=""></picture>
-							</div>
-							<div class="team-card__text">
-								<h3>Аксана <br> Щеглова</h3>
-								<p class="team-card__descp">Менеджер тренажерного зала и персональный тренер</p>
-							</div>
-						</div>
+				<? $team = carbon_get_theme_option('complex_team');
+				if ($team) {
+					$teamIndex = 0;
+					foreach ($team as $item) {
+						?>
 						<div class="team-card__body d-flex">
 							<div class="team-card__img">
 								<div class="nuar_blk"></div>
-								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/03.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/03.jpg?_v=1633466607061" alt=""></picture>
-								</div>
-								<div class="team-card__text">
-									<h3>Королева <br> Анастасия</h3>
-									<p class="team-card__descp">Персональный тренер</p>
-								</div>
+								<img src="<?php echo wp_get_attachment_image_src($item['img_team'], 'large')[0]; ?>" alt="">
 							</div>
-							<div class="team-card__body d-flex">
-								<div class="team-card__img">
-									<div class="nuar_blk"></div>
-									<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/04.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/04.jpg?_v=1633466607061" alt=""></picture>
-									</div>
-									<div class="team-card__text">
-										<h3>Александр <br> Горюнов</h3>
-										<p class="team-card__descp">Инструктор тренажерного зала</p>
-									</div>
-								</div>
+							<div class="team-card__text">
+								<h3><? echo $item['surname_team']; ?> <br> <? echo $item['name_team']; ?></h3>
+								<p class="team-card__descp"><? echo $item['special_team']; ?></p>
 							</div>
 						</div>
-					</section>
+						<?
+						$teamIndex++; 
+					}
+				}
+				?>
+			</div>
+		</div>
+	</section>
 
-					<section id="connection" class="connection">
-						<div class="_container">
-							<div class="connection__block d-flex">
-								<div class="connection__descp connection__form-descp">
-									<h2 class="title">Записаться на гостевой визит</h2>
-									<form class="connection__form">
-										<div class="connection__line form__line">
-											<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Имя"
-											class="input _req">
-											<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Телефон"
-											class="input _phone _req">
-											<input id="email" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="E-mail"
-											class="input _email _req">
-										</div>
-										<p>
-											Оставляя заявку, вы подтверждаете, что согласны на обработку ваших персональных данных,
-											согласно нашим правилам соблюдения конфиденциальности.
-										</p>
-										<button type="submit" class="connection__form__btn btn">Записаться</button>
-									</form>
-								</div>
-								<div class="connection__img">
-									<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card-img.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card-img.png?_v=1633466607061" alt=""></picture>
-									</div>
-								</div>
-							</div>
-						</section>
+	<section id="connection" class="connection">
+		<div class="_container">
+			<div class="connection__block d-flex">
+				<div class="connection__descp connection__form-descp">
+					<h2 class="title">Записаться на гостевой визит</h2>
+					<form class="connection__form">
+						<div class="connection__line form__line">
+							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Имя"
+							class="input _req">
+							<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Телефон"
+							class="input _phone _req">
+							<input id="email" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="E-mail"
+							class="input _email _req">
+						</div>
+						<p>
+							Оставляя заявку, вы подтверждаете, что согласны на обработку ваших персональных данных,
+							согласно нашим правилам соблюдения конфиденциальности.
+						</p>
+						<button type="submit" class="connection__form__btn btn">Записаться</button>
+					</form>
+				</div>
+				<div class="connection__img">
+					<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card-img.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card-img.png?_v=1633466607061" alt=""></picture>
+					</div>
+				</div>
+			</div>
+		</section>
 
-						<?php get_template_part('template-parts/contacts-section');?>
+		<?php get_template_part('template-parts/contacts-section');?>
 
-					</main>
+	</main>
 
-					<?php get_footer(); 
+	<?php get_footer(); 

@@ -175,32 +175,35 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
 
   // ));
 
-  // Container::make('post_meta', 'single-galery', 'Характеристики записи')
+  Container::make('post_meta', 'zone', 'Доп поля')
   // ->show_on_template(array('single-galery.php'))
-  //     ->add_fields(array(   
-  //     Field::make('text', 'number_img', 'Колличество изображений') 
-  //       ->set_width(33),
-  //     Field::make( 'complex', 'galery_prod_complex', "Сопутствующие товары" )
-  //       ->set_max(2) // Можно будет выбрать только 2 поста
-  //       ->add_fields( array(
-  //         Field::make('image', 'galery_works_img', 'Изображение' )->set_width(30),
-  //         Field::make('text', 'galery_prod_title', 'Название товара')->set_width(30),
-  //         Field::make('text', 'galery_prod_price', 'Стоимость товара')->set_width(50),
-  //         Field::make('text', 'galery_prod_link', 'Ссылка на товар')->set_width(50)      
-  //     ) ),
-  //     Field::make( 'complex', 'galery_works', "Галерея наших работ" )
-  //     ->add_fields( array(
-  //       Field::make('image', 'galery_works_img', 'Изображение' )->set_width(30),
-  //       Field::make('text', 'galery_works_img_sku', 'ID для модификации')->set_width(30),
-  //       Field::make('text', 'galery_works_img_alt', 'alt и title')->set_width(30)        
-  //     ) ),
-  //     Field::make( 'complex', 'galery_fabrics', "Галерея тканей" )
-  //     ->add_fields( array(
-  //       Field::make('image', 'galery_fabrics_img', 'Изображение' )->set_width(30),
-  //       Field::make('text', 'galery_fabrics_img_alt', 'alt и title')->set_width(30)        
-  //     ) ),
+      ->add_fields(array(   
+      Field::make('text', 'zone_subtitle', 'Подзаголовок в банере') 
+        ->set_width(33),
+      Field::make('rich_text', 'zone_text', 'Описание')->set_width(100),
+      Field::make( 'complex', 'complex_zone_galery', "Фото галерея" )
+        // ->set_max(2) // Можно будет выбрать только 2 поста
+        ->add_fields( array(
+          Field::make('image', 'zone_galery_img', 'Изображение' )->set_width(30),
+      ) ),
+  ));
 
-  // ));
+  Container::make('post_meta', 'Fitnes zone', 'Программы')
+      ->show_on_page(28)
+      ->add_fields(array(   
+      Field::make('complex', 'complex_programm', 'Программы Fitnes Zone')
+      // ->set_max(3) // Можно будет выбрать только 5 постов
+      ->add_fields(array(
+        Field::make('image', 'img_programm', 'Картинка')
+        ->set_width(10),
+        Field::make('text', 'title_programm', 'Заголовок')   
+        ->set_width(20),
+        Field::make('text', 'text_programm', 'Текст')   
+        ->set_width(65),
+        // Field::make('text', 'link_programm', 'Ссылка')   
+        // ->set_width(30),
+        )),
+  ));
 
   // Container::make('post_meta', 'page-gallery-tkaney-obivki-sidenii', 'Характеристики записи')
   // ->show_on_template(array('page-gallery-tkaney-obivki-sidenii.php'))

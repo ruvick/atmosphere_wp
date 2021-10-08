@@ -3729,6 +3729,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .banner-bg__subtitle {
+  max-width: 500px;
+  width: 100%;
   font-size: 28px;
   line-height: 33.6px;
   font-weight: 700;
@@ -4627,6 +4629,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .content h1 {
   font-size: 44px;
   margin-bottom: 15px;
+}
+
+.content p {
+  margin-bottom: 10px;
 }
 
 .content ul {

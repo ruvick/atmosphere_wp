@@ -31,7 +31,7 @@
 					<h2 class="title-block">Fitness zone</h2>
 					<p class="about__item__subtitle">Более 2000 м² Фитнеса</p>
 				</div>
-				<a href="<?php echo get_permalink();?>" class="about__item card-bg-item _bgi">
+				<a href="<?php echo get_permalink(28);?>" class="about__item card-bg-item _bgi">
 					<div class="nuar_blk"></div>
 					<div class="about__list-block about__list-block-left d-flex">
 						<ul>
@@ -41,7 +41,7 @@
 						</ul>
 					</div>
 				</a>
-				<a href="<?php echo get_permalink();?>" class="about__item card-bg-item _bgi">
+				<a href="<?php echo get_permalink(28);?>" class="about__item card-bg-item _bgi">
 					<div class="nuar_blk"></div>
 					<div class="about__list-block about__list-block-right d-flex">
 						<ul>
@@ -51,7 +51,7 @@
 						</ul>
 					</div>
 				</a>
-				<a href="<?php echo get_permalink();?>" class="about__item card-bg-item _bgi">
+				<a href="<?php echo get_permalink(57);?>" class="about__item card-bg-item _bgi">
 					<div class="nuar_blk"></div>
 					<h2 class="about__bg-item__title card-bg-item__title title-block">Beauty zone</h2>
 					<p class="about__item__subtitle">Более 400м²</p>
@@ -70,7 +70,7 @@
 						</ul>
 					</div>
 				</a>
-				<a href="<?php echo get_permalink();?>" class="about__item card-bg-item _bgi">
+				<a href="<?php echo get_permalink(59);?>" class="about__item card-bg-item _bgi">
 					<div class="nuar_blk"></div>
 					<h2 class="about__bg-item__title card-bg-item__title title-block">Cafe zone</h2>
 					<p class="about__item__subtitle">Более 400м²</p>

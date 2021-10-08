@@ -26,6 +26,11 @@ get_header(); ?>
 
 	<section id="advant-sec" class="advant-sec recurring">
 		<div class="_container">
+			<?php
+			if ( function_exists('yoast_breadcrumb') ) {
+				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+			}
+			?> 
 			<h2>Преимущества</h2>
 			<div class="advant-sec__row d-flex">
 				<div class="advant-sec__item _bgi d-flex">
@@ -136,7 +141,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-	<?php get_template_part('template-parts/contacts-section');?>
+		<?php get_template_part('template-parts/contacts-section');?>
 
 	</main>
 

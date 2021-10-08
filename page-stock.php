@@ -26,6 +26,11 @@ get_header(); ?>
 
 	<section id="recurring" class="stock-card recurring">
 		<div class="_container">
+			<?php
+			if ( function_exists('yoast_breadcrumb') ) {
+				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+			}
+			?> 
 			<h2>Акции</h2>
 			<div class="card-bg__row d-flex">
 				<? $promo = carbon_get_theme_option('complex_promo');

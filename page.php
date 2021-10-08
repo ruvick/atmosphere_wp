@@ -19,8 +19,8 @@ get_header(); ?>
 
 	<main id="primary" class="page site-main"> 
 
-		<section class="content"> 
-			<div class="container">
+		<section class="content recurring"> 
+			<div class="_container">
 
 			<?php
 			if ( function_exists('yoast_breadcrumb') ) {

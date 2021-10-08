@@ -4652,6 +4652,38 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   flex: 0 1 24.6%;
   margin-bottom: 10px;}
 
+#breadcrumbs {
+  margin-bottom: 25px;
+}
+
+#breadcrumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#breadcrumbs span {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #85878b;
+}
+
+#breadcrumbs span a {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  /*color: #85878b;*/
+}
+
+
+
+
 
 
 @media (min-width: 991.98px) {

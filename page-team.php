@@ -26,6 +26,11 @@ get_header(); ?>
 
 	<section class="team-sec recurring">
 		<div class="_container">
+			<?php
+			if ( function_exists('yoast_breadcrumb') ) {
+				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+			}
+			?> 
 			<h2 class="title">Тренеры</h2>
 			<div class="team-sec__row d-flex">
 				<? $team = carbon_get_theme_option('complex_team');

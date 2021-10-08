@@ -3,9 +3,9 @@
 		<h2 class="title">Оставьте заявку и мы Вам перезвоним:</h2>
 		<form action="#" class="application__form form">
 			<div class="application__line form__line">
-				<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Имя"
+				<input autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"
 				class="input _req">
-				<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Телефон"
+				<input autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон"
 				class="input _phone _req">
 				<button type="submit" class="form__btn btn">Подробнее</button>
 			</div>

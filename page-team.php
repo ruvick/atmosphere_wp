@@ -64,11 +64,11 @@ get_header(); ?>
 					<h2 class="title">Записаться на гостевой визит</h2>
 					<form class="connection__form">
 						<div class="connection__line form__line">
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Имя"
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Имя"
 							class="input _req">
-							<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Телефон"
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Телефон"
 							class="input _phone _req">
-							<input id="email" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="E-mail"
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="E-mail"
 							class="input _email _req">
 						</div>
 						<p>

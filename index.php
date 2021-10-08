@@ -14,7 +14,7 @@
 			</h4> -->
 			<div class="info-index__btn-block d-flex">
 				<a href="#callback" class="info-index__btn _popup-link btn">Связаться с менеджером</a>
-				<a href="<?php echo get_permalink(26);?>" class="info-index__btn-text btn">#В честь открытия скидка на <br> клубные карты</a>
+				<a href="<?php echo get_permalink(26);?>" class="info-index__btn-text btn">#В честь открытия скидки на <br> клубные карты</a>
 			</div>
 		</div>
 		<?php get_template_part('template-parts/soc-block');?>
@@ -31,7 +31,7 @@
 					<h2 class="title-block">Fitness zone</h2>
 					<p class="about__item__subtitle">Более 2000 м² Фитнеса</p>
 				</div>
-				<div class="about__item card-bg-item _bgi">
+				<a href="<?php echo get_permalink();?>" class="about__item card-bg-item _bgi">
 					<div class="nuar_blk"></div>
 					<div class="about__list-block about__list-block-left d-flex">
 						<ul>
@@ -40,8 +40,8 @@
 							<li>Система ключ-браслет</li>
 						</ul>
 					</div>
-				</div>
-				<div class="about__item card-bg-item _bgi">
+				</a>
+				<a href="<?php echo get_permalink();?>" class="about__item card-bg-item _bgi">
 					<div class="nuar_blk"></div>
 					<div class="about__list-block about__list-block-right d-flex">
 						<ul>
@@ -50,8 +50,8 @@
 							<li>Бесплатная питьевая вода</li>
 						</ul>
 					</div>
-				</div>
-				<div class="about__item card-bg-item _bgi">
+				</a>
+				<a href="<?php echo get_permalink();?>" class="about__item card-bg-item _bgi">
 					<div class="nuar_blk"></div>
 					<h2 class="about__bg-item__title card-bg-item__title title-block">Beauty zone</h2>
 					<p class="about__item__subtitle">Более 400м²</p>
@@ -69,8 +69,8 @@
 							<li>Бутик косметики</li>
 						</ul>
 					</div>
-				</div>
-				<div class="about__item card-bg-item _bgi">
+				</a>
+				<a href="<?php echo get_permalink();?>" class="about__item card-bg-item _bgi">
 					<div class="nuar_blk"></div>
 					<h2 class="about__bg-item__title card-bg-item__title title-block">Cafe zone</h2>
 					<p class="about__item__subtitle">Более 400м²</p>
@@ -81,7 +81,7 @@
 							<li>Полезные перекусы</li>
 						</ul>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</section>

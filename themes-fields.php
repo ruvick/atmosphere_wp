@@ -20,6 +20,20 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       Field::make('text', 'about_home_title', 'Заголовок на главной'),
       // Field::make('rich_text', 'about_home', 'О нашей компании')
     ))
+    ->add_tab('Клубные карты', array(
+      Field::make('complex', 'complex_club_cards', 'Выводим Клубные карты')
+      // ->set_max(3) // Можно будет выбрать только 5 постов
+      ->add_fields(array(
+        Field::make('image', 'img_club_cards', 'Фото')
+        ->set_width(10),
+        Field::make('text', 'title_club_cards', 'Заголовок')   
+        ->set_width(20),
+        Field::make('text', 'text_club_cards', 'Текст')   
+        ->set_width(65),
+        // Field::make('text', 'link_promo', 'Ссылка')   
+        // ->set_width(30),
+        ))
+    ))
     ->add_tab('Акции', array(
       Field::make('complex', 'complex_promo', 'Выводим блоки с Акциями')
       // ->set_max(3) // Можно будет выбрать только 5 постов

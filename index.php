@@ -49,9 +49,9 @@
 					<div class="nuar_blk"></div>
 					<div class="about__list-block about__list-block-left d-flex">
 						<ul>
-							<li>Современная среда</li>
-							<li>Новейшее оборудования</li>
-							<li>Система ключ-браслет</li>
+							<li>Комфортная среда</li>
+							<li>Современное оборудования</li>
+							<li>Система "ключ-браслет"</li>
 						</ul>
 					</div>
 				</a>
@@ -87,7 +87,7 @@
 				<a href="<?php echo get_permalink(59);?>" class="about__item card-bg-item _bgi">
 					<div class="nuar_blk"></div>
 					<h2 class="about__bg-item__title card-bg-item__title title-block">Cafe zone</h2>
-					<p class="about__item__subtitle">Более 400м²</p>
+					<p class="about__item__subtitle">Более 100м²</p>
 					<div class="about__list-block d-flex">
 						<ul>
 							<li>Горячие, холодные напитки</li>
@@ -117,7 +117,7 @@
 						$teamIndex = 0;
 						foreach ($team as $item) {
 							?>
-							<div class="team-card__body d-flex">
+							<div class="team-card__body slider__slide d-flex">
 								<div class="team-card__img" style="background-image: url(<?php echo wp_get_attachment_image_src($item['img_team'], 'full')[0];?>);">
 									<div class="nuar_blk"></div>
 									<div class="team-card__name">

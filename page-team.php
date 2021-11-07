@@ -38,16 +38,20 @@ get_header(); ?>
 					$teamIndex = 0;
 					foreach ($team as $item) {
 						?>
-						<div class="team-card__body d-flex">
-							<div class="team-card__img">
+						<div class="team-card__body slider__slide d-flex">
+							<div class="team-card__img" style="background-image: url(<?php echo wp_get_attachment_image_src($item['img_team'], 'full')[0];?>);">
 								<div class="nuar_blk"></div>
-								<img src="<?php echo wp_get_attachment_image_src($item['img_team'], 'large')[0]; ?>" alt="">
+								<div class="team-card__name">
+									<h3 class="team-card__name-text"><? echo $item['surname_team']; ?> <? echo $item['name_team']; ?></h3>
+								</div>
 							</div>
-							<div class="team-card__text">
-								<h3><? echo $item['surname_team']; ?> <br> <? echo $item['name_team']; ?></h3>
-								<p class="team-card__descp"><? echo $item['special_team']; ?></p>
+							<div class="team-card__special">
+								<h4 class="team-card__special-title">Персональные тренировки</h4>
+								<p class="team-card__special-text"><? echo $item['special_team']; ?></p>
+								<h4 class="team-card__special-title">Групповые тренировки</h4>
+								<p class="team-card__special-text"><? echo $item['special_team']; ?></p>
 							</div>
-						</div>
+						</div> 
 						<?
 						$teamIndex++; 
 					}

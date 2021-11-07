@@ -4099,28 +4099,38 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .team-card__body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 24.75%;
-          flex: 0 1 24.75%;
-  padding-bottom: 15px;
+  -ms-flex: 0 1 24.75%;
+  flex: 0 1 24.75%;
+  /*padding-bottom: 15px;*/
   background: #fff;
   border: 1px solid #e7ebee;
   margin: 0 2px;
 }
 
-.team-card__body h3 {
+.team-card__name {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  min-height: 56px;
+  z-index: 50000;
+  background-color: #69a71ab5;
+}
+
+.team-card__name-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.team-card__body h3:after {
+/*.team-card__body h3:after {
   content: "";
   float: left;
   width: 80px;
@@ -4128,41 +4138,56 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background: #69A71A;
   margin-top: 25px;
   margin-bottom: 22px;
-}
+}*/
 
 .team-card__img {
   position: relative;
+  display: flex;
+  align-items: flex-end;
 /*  -webkit-box-flex: 0;
   -ms-flex: 0 1 345px;
   flex: 0 1 345px;*/
   height: 507px;
-  -webkit-filter: grayscale(1);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* -webkit-filter: grayscale(1); */
   /* Safari 6.0 - 9.0 */
-  filter: grayscale(1);
+  /* filter: grayscale(1);
   -webkit-transition: all 0.6s ease 0s;
   -o-transition: all 0.6s ease 0s;
-  transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s; */
 }
 
-.team-card__img:hover {
-  -webkit-filter: grayscale(0);
+/* .team-card__img:hover { */
+  /* -webkit-filter: grayscale(0); */
   /* Safari 6.0 - 9.0 */
-  filter: grayscale(0);
+  /* filter: grayscale(0); */
+/* } */
+
+.team-card__special {
+  padding: 22px 10px;
 }
 
-.team-card__text {
-  padding: 22px 10px 0 10px;
+.team-card__special-title {
+  font-size: 22px;
+  color: #69a71a;
+  margin-bottom: 10px;
 }
 
-.team-card__descp {
+.team-card__special-text {
+  margin-bottom: 20px !important;
+}
+.team-card__special-text:last-child {
   margin-bottom: 0 !important;
 }
+
 
 .team-card__contact {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .team-card__img .nuar_blk {

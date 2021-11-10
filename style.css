@@ -3742,13 +3742,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   min-height: 640px;
   padding: 93px 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center;
 }
 
 .banner-bg__container {
@@ -4716,7 +4716,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .zone ul li:before {
   content:'';
   float: left;
-  width: 5px;
+  flex: 0 0 5px;
   height: 5px;
   border-radius: 50%;
   background: #69a71a;
@@ -5727,6 +5727,10 @@ body {
   .team-sec__row .team-card__body {
     -ms-flex: 0 1 25%;
     flex: 0 1 25%;}
+  .zone ul {
+    padding-left: 10px;}
+  .stock-slider-sec__subtitle {
+    margin-bottom: 15px;}
 }
 
 @media (max-width: 700px) {

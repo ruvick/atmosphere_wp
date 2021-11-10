@@ -126,9 +126,9 @@
 								</div>
 								<div class="team-card__special">
 									<h4 class="team-card__special-title">Персональные тренировки</h4>
-									<p class="team-card__special-text"><? echo $item['special_team']; ?></p>
+									<p class="team-card__special-text"><? echo $item['pers_training_team']; ?></p>
 									<h4 class="team-card__special-title">Групповые тренировки</h4>
-									<p class="team-card__special-text"><? echo $item['special_team']; ?></p>
+									<p class="team-card__special-text"><? echo $item['group_training_team']; ?></p>
 								</div>
 							</div> 
 							<?

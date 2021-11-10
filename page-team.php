@@ -17,7 +17,7 @@ get_header(); ?>
 			<h1 class="title"><? the_title();?></h1>
 			<p class="banner-bg__subtitle">
 				Команда лучших тренеров <br> 
-				позаботятся о Вашей форме и здоровье
+				позаботятся о Вашей форме и здоровье 
 			</p>
 			<a href="#callback" class="banner-bg__btn _popup-link btn">Связаться с менеджером</a>
 		</div>
@@ -47,9 +47,9 @@ get_header(); ?>
 							</div>
 							<div class="team-card__special">
 								<h4 class="team-card__special-title">Персональные тренировки</h4>
-								<p class="team-card__special-text"><? echo $item['special_team']; ?></p>
+								<p class="team-card__special-text"><? echo $item['pers_training_team']; ?></p>
 								<h4 class="team-card__special-title">Групповые тренировки</h4>
-								<p class="team-card__special-text"><? echo $item['special_team']; ?></p>
+								<p class="team-card__special-text"><? echo $item['group_training_team']; ?></p>
 							</div>
 						</div> 
 						<?

@@ -55,11 +55,13 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
         Field::make('image', 'img_team', 'Фото')
         ->set_width(10),
         Field::make('text', 'surname_team', 'Фамилия')   
-        ->set_width(20),
+        ->set_width(30),
         Field::make('text', 'name_team', 'Имя')   
-        ->set_width(20),
-        Field::make('text', 'special_team', 'Специализация')   
-        ->set_width(40),
+        ->set_width(30),
+        Field::make('text', 'pers_training_team', 'Персональные тренировки')    
+        ->set_width(50),
+        Field::make('text', 'group_training_team', 'Групповые тренировки')    
+        ->set_width(50),
         // Field::make('text', 'link_promo', 'Ссылка')   
         // ->set_width(30),
         ))

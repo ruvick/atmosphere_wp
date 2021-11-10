@@ -61,26 +61,30 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section id="photo-gallery-sec" class="photo-gallery-sec">
-			<div class="_container">
-				<h2>Фото галерея</h2> 
-				<div class="photo-gallery-sec__row d-flex">
-					<? $zoneGalery = carbon_get_post_meta(get_the_ID(),"complex_zone_galery");
-					if ($zoneGalery) {
-						$zoneGaleryIndex = 0;
-						foreach ($zoneGalery as $item) {
-							?>
-							<div class="photo-gallery-sec__item-img">
-								<img src="<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'large')[0]; ?>" alt="Картинка фотогалереи">
-							</div>
-							<?
-							$$zoneGaleryIndex++; 
+		<? 
+		$zoneGalery = carbon_get_post_meta(get_the_ID(),"complex_zone_galery");
+		if (!empty($zoneGalery)) {?>
+			<section id="photo-gallery-sec" class="photo-gallery-sec">
+				<div class="_container">
+					<h2>Фото галерея</h2> 
+					<div class="photo-gallery-sec__row d-flex">
+						<? 
+						if ($zoneGalery) {
+							$zoneGaleryIndex = 0;
+							foreach ($zoneGalery as $item) {
+								?>
+								<div class="photo-gallery-sec__item-img">
+									<img src="<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'large')[0]; ?>" alt="Картинка фотогалереи">
+								</div>
+								<?
+								$$zoneGaleryIndex++; 
+							}
 						}
-					}
-					?>
+						?>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+			<?}?>
 
 		<?php get_template_part('template-parts/contacts-section');?>
 

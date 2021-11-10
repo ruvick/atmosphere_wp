@@ -61,28 +61,34 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section id="photo-gallery-sec" class="photo-gallery-sec">
-			<div class="_container">
-				<h2>Фото галерея</h2> 
-				<div class="photo-gallery-sec__row d-flex">
-					<? $zoneGalery = carbon_get_post_meta(get_the_ID(),"complex_zone_galery");
-					if ($zoneGalery) {
-						$zoneGaleryIndex = 0;
-						foreach ($zoneGalery as $item) {
-							?>
-							<div class="photo-gallery-sec__item-img">
-								<img src="<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'large')[0]; ?>" alt="Картинка фотогалереи">
-							</div>
-							<?
-							$$zoneGaleryIndex++; 
+		<? 
+		$zoneGalery = carbon_get_post_meta(get_the_ID(),"complex_zone_galery");
+		if (!empty($zoneGalery)) {?>
+			<section id="photo-gallery-sec" class="photo-gallery-sec">
+				<div class="_container">
+					<h2>Фото галерея</h2> 
+					<div class="photo-gallery-sec__row d-flex">
+						<? 
+						if ($zoneGalery) {
+							$zoneGaleryIndex = 0;
+							foreach ($zoneGalery as $item) {
+								?>
+								<div class="photo-gallery-sec__item-img">
+									<img src="<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'large')[0]; ?>" alt="Картинка фотогалереи">
+								</div>
+								<?
+								$$zoneGaleryIndex++; 
+							}
 						}
-					}
-					?>
+						?>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+			<?}?>
 
-		<!-- <?php if (is_page('28')) { ?> -->
+		<!-- <?php if (is_page('28')) { ?> --> 
+		<? $fprogr = carbon_get_post_meta(get_the_ID(),"complex_programm");
+		if (!empty($fprogr)) {?>
 			<section id="stock-slider-sec" class="stock-slider-sec">
 				<div class="_container">
 					<h2 class="stock-slider-sec__title">Групповые тренировки</h2>
@@ -94,7 +100,7 @@ get_header(); ?>
 				<div class="stock-slider__wrap">
 					<div class="stock-slider__container _container">
 						<div class="stock-slider _swiper d-flex">
-							<? $fprogr = carbon_get_post_meta(get_the_ID(),"complex_programm");
+						<? 
 							if ($fprogr) {
 								$fprogrIndex = 0;
 								foreach ($fprogr as $item) {
@@ -115,6 +121,7 @@ get_header(); ?>
 					<div class="swiper-button swiper-button-prev"></div>
 				</div>
 			</section>
+			<?}?>
 		<!-- <?php } ?> -->
 
 		<?php get_template_part('template-parts/contacts-section');?>

@@ -4728,14 +4728,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 /* =========================== */
 
 .team-sec__row {
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   flex-wrap: wrap;
+  margin: 0 -4px;
 }
 
-.team-sec__row .team-card__body {
-  -ms-flex: 0 1 24.6%;
-  flex: 0 1 24.6%;
-  margin-bottom: 10px;}
+.team-sec__col {
+  display: flex;
+  -ms-flex: 0 1 25%;
+  flex: 0 1 25%;
+  padding: 0 4px;
+  margin-bottom: 10px;
+}
+
+.team-sec__card {
+  flex: 0 1 100% !important;
+  margin: 0;
+}
 
 #breadcrumbs {
   margin-bottom: 25px;
@@ -4964,6 +4973,8 @@ body {
   }
   .team-card__body {
     flex: 0 1 32%;}
+  .team-sec__col {
+    flex: 0 1 33.333%;}
 }
 
 @media (max-width: 1150px) {
@@ -5231,6 +5242,8 @@ body {
   }
   .team-card__body {
     flex: 0 1 38%;}
+  .team-sec__col {
+    flex: 0 1 50%;}
 }
 
 @media (max-width: 812px) {
@@ -5747,6 +5760,20 @@ body {
     font-size: 12px !important;
     margin-left: 0;
     margin-bottom: 10px !important;}
+  ::-webkit-scrollbar {
+    display: none;}
+  .team-sec__row {
+    flex-wrap: nowrap;
+    width: auto;
+    overflow: auto;
+    margin: 0 -10px;}
+  .team-sec__col {
+    flex: 0 0 32%;
+    padding: 0;
+    margin-right: 5px;
+    margin-bottom: 0;}
+  .team-sec__col:first-child {
+    margin-left: 5px; }
 }
 
 @media (max-width: 700px) {
@@ -5851,11 +5878,13 @@ body {
   .advant-sec__line {
     max-width: 100px;
   }
+  .team-sec__col {
+    flex: 0 0 38%;}
 }
 
 @media (max-width: 540px) {
-  .team-sec__row {
-    justify-content: space-around;}
+/*  .team-sec__row {
+    justify-content: space-around;}*/
   .team-sec__row .team-card__body {
     -ms-flex: 0 1 40%;
     flex: 0 1 40%;}
@@ -6002,6 +6031,8 @@ body {
   .team-card__body {
     -ms-flex: 0 1 52%;
     flex: 0 1 52%;}
+  .team-sec__col {
+    flex: 0 0 46%;}
 }
 
 @media (max-width: 480px) {
@@ -6064,6 +6095,8 @@ body {
   .popup__form-btn {
     width: 100%;
   }
+  .team-sec__col {
+    flex: 0 0 60%;}
 }
 
 @media (max-width: 440px) {
@@ -6103,6 +6136,8 @@ body {
   .team-card__body {
     -ms-flex: 0 1 80%;
     flex: 0 1 80%;}
+  .team-sec__col {
+    flex: 0 0 75%;}
 }
 
 @media (max-width: 340px) {

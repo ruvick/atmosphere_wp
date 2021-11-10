@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template Name: Страница Zone
+Template Name: Страница Beauty zone 
 Template Post Type: page
 */
 
@@ -11,8 +11,8 @@ get_header(); ?>
 
 <main class="page">
 
-	<section id="fitness-zone-sec" class="banner-bg fitness-zone-sec">
-		<div class="banner-bg__nuar_blk nuar_blk"></div>
+	<section id="fitness-zone-sec" class="banner-bg" style="background-image: url('<?php the_post_thumbnail_url( 'full' );?>');">
+		<div class="banner-bg__nuar_blk nuar_blk"></div> 
 		<div class="banner-bg__container _container">
 			<h1 class="title"><? the_title();?></h1>
 			<p class="banner-bg__subtitle"><?echo carbon_get_post_meta(get_the_ID(),"zone_subtitle"); ?></p>
@@ -21,7 +21,7 @@ get_header(); ?>
 		<?php get_template_part('template-parts/soc-block');?>
 	</section>
 
-	<section id="fitness-zone-descp-sec" class="fitness-zone-descp-sec recurring">
+	<section id="fitness-zone-descp-sec" class="fitness-zone-descp-sec zone recurring">
 		<div class="_container">
 			<?php
 			if ( function_exists('yoast_breadcrumb') ) {
@@ -63,7 +63,7 @@ get_header(); ?>
 
 		<section id="photo-gallery-sec" class="photo-gallery-sec">
 			<div class="_container">
-				<h2>Фото галерея</h2>
+				<h2>Фото галерея</h2> 
 				<div class="photo-gallery-sec__row d-flex">
 					<? $zoneGalery = carbon_get_post_meta(get_the_ID(),"complex_zone_galery");
 					if ($zoneGalery) {
@@ -81,37 +81,6 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-
-		<?php if (is_page('28')) { ?>
-			<section id="stock-slider-sec" class="stock-slider-sec">
-				<div class="_container">
-					<h2>Программы Fitnes Zone</h2>
-				</div>
-				<div class="stock-slider__wrap">
-					<div class="stock-slider__container _container">
-						<div class="stock-slider _swiper d-flex">
-							<? $fprogr = carbon_get_post_meta(get_the_ID(),"complex_programm");
-							if ($fprogr) {
-								$fprogrIndex = 0;
-								foreach ($fprogr as $item) {
-									?>
-									<div class="card-bg-item slider__slide _bgi" style="background-image: url(<?php echo wp_get_attachment_image_src($item['img_programm'], 'full')[0];?>);">
-										<div class="nuar_blk"></div>
-										<h2 class="card-bg-item__title title-block"><? echo $item['title_programm']; ?></h2>
-										<p><? echo $item['text_programm']; ?></p>
-									</div>
-									<?
-									$fprogrIndex++; 
-								}
-							}
-							?>
-						</div>
-					</div>
-					<div class="swiper-button swiper-button-next"></div>
-					<div class="swiper-button swiper-button-prev"></div>
-				</div>
-			</section>
-		<?php } ?>
 
 		<?php get_template_part('template-parts/contacts-section');?>
 

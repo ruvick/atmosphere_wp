@@ -14,7 +14,7 @@
 
 <? } else { ?>
 
-	<?php get_template_part('template-parts/header-section');?> 
+	<?php get_template_part('template-parts/header-section');?>  
 
 	<main class="page">
 

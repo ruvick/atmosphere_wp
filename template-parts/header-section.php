@@ -8,6 +8,9 @@
 				<div class="header__contacts d-flex">
 					<? $tel = carbon_get_theme_option("as_phone_1"); 
 					if (!empty($tel)){?><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="header__phone"><? echo $tel; ?></a><?}?>
+					
+					<? $tel = carbon_get_theme_option("as_phone_2"); 
+					if (!empty($tel)){?><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="header__phone"><? echo $tel; ?></a><?}?>
 					<a href="#callback" class="header__popup-link btn _popup-link">Заявка On-Line</a>
 				</div>
 				<div class="menu__icon icon-menu">

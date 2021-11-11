@@ -207,10 +207,14 @@ h4 {
   margin-bottom: 55px;
 }
 
+.title_center{
+  text-align: center;
+}
+
 .title::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: calc(50% - 80px);
   bottom: -20px;
   width: 161px;
   height: 1px;
@@ -3432,9 +3436,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       -ms-flex-align: center;
           align-items: center;
   font-family: "MyriadPro";
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 19px;
   color: #fff;
 }
 
@@ -4183,7 +4187,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .team-card__special-title {
   font-size: 22px;
-  color: #69a71a;
+  /* color: #69a71a; */
   margin-bottom: 10px;
 }
 
@@ -5518,6 +5522,8 @@ body {
   .title {
     margin-bottom: 30px !important;
   }
+
+
 
   .title::after {
     bottom: -10px;

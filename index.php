@@ -50,7 +50,7 @@
 					<div class="about__list-block about__list-block-left d-flex">
 						<ul>
 							<li>Комфортная среда</li>
-							<li>Современное оборудования</li>
+							<li>Современное оборудование</li>
 							<li>Система "ключ-браслет"</li>
 						</ul>
 					</div>
@@ -102,11 +102,8 @@
 
 	<section id="team" class="team">
 		<div class="_container">
-			<h2 class="title">Тренеры ATMOSFERA фитнес</h2>
-			<p>
-				Благодаря профессиональным тренерам Вы сможете не только сбросить лишний вес или набрать мышечную <br>
-				массу, выработать правильную технику, выточить идеальный рельеф и многое другое.
-			</p>
+			<h2 class="title title_center">Тренерский состав</h2>
+
 		</div>
 
 		<div class="team__row d-flex">

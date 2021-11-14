@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template Name: Страница Fitness zone 
+Template Name: Страница Fitness zone -test
 Template Post Type: page
 */
 
@@ -28,8 +28,8 @@ get_header(); ?>
 				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
 			}
 			?> 
-			<h2 class="title"><? the_title();?></h2>
-			<p><?echo carbon_get_post_meta(get_the_ID(),"zone_text"); ?></p>
+			<h2 class="title f22"><? the_title();?></h2>
+			<p><?//echo carbon_get_post_meta(get_the_ID(),"zone_text"); ?></p>
 		</div>
 	</section>
 
@@ -55,7 +55,7 @@ get_header(); ?>
 					</form>
 				</div>
 				<div class="connection__img">
-					<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card-img.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card-img.png?_v=1633466607061" alt=""></picture>
+					<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card-img.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card-img.png" alt=""></picture>
 					</div>
 				</div>
 			</div>
@@ -64,26 +64,58 @@ get_header(); ?>
 		<? 
 		$zoneGalery = carbon_get_post_meta(get_the_ID(),"complex_zone_galery");
 		if (!empty($zoneGalery)) {?>
-			<section id="photo-gallery-sec" class="photo-gallery-sec">
+			
+
+			<section id="stock-slider-sec" class="stock-slider-sec">
+				<div class="_container">
+					<h2 class="stock-slider-sec__title title title_center">Фото галерея</h2>
+					<p class="stock-slider-sec__subtitle"></p> 
+				</div>
+				<div class="stock-slider__wrap">
+					<div class="stock-slider__container _container">
+						<div class="stock-slider _swiper d-flex">
+						<? 
+							
+								$fprogrIndex = 0;
+								foreach ($zoneGalery as $item) {
+									?>
+									<div class="card-bg-item slider__slide _bgi" style="background-image: url(<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'full')[0];?>);">
+										<div class="nuar_blk"></div>
+										<p><? echo $item['zone_galery_txt']; ?></p>
+									</div>
+									<?
+									$fprogrIndex++; 
+								}
+							
+							?>
+						</div>
+					</div>
+					<div class="swiper-button swiper-button-next"></div>
+					<div class="swiper-button swiper-button-prev"></div>
+				</div>
+			</section>
+
+			<!-- <section id="photo-gallery-sec" class="photo-gallery-sec">
 				<div class="_container">
 					<h2>Фото галерея</h2> 
 					<div class="photo-gallery-sec__row d-flex">
 						<? 
-						if ($zoneGalery) {
-							$zoneGaleryIndex = 0;
-							foreach ($zoneGalery as $item) {
-								?>
-								<div class="photo-gallery-sec__item-img">
-									<img src="<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'large')[0]; ?>" alt="Картинка фотогалереи">
-								</div>
-								<?
-								$$zoneGaleryIndex++; 
-							}
-						}
+						// if ($zoneGalery) {
+						// 	$zoneGaleryIndex = 0;
+						// 	foreach ($zoneGalery as $item) {
+						// 		?>
+						// 		<div class="photo-gallery-sec__item-img">
+						// 			<img src="<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'large')[0]; ?>" alt="Картинка фотогалереи">
+						// 		</div>
+						// 		<?
+						// 		$$zoneGaleryIndex++; 
+						// 	}
+						// }
 						?>
 					</div>
 				</div>
-			</section>
+			</section> -->
+
 			<?}?>
 
 		<!-- <?php if (is_page('28')) { ?> --> 
@@ -91,15 +123,12 @@ get_header(); ?>
 		if (!empty($fprogr)) {?>
 			<section id="stock-slider-sec" class="stock-slider-sec">
 				<div class="_container">
-					<h2 class="stock-slider-sec__title">Групповые тренировки</h2>
-					<p class="stock-slider-sec__subtitle">
-						Для тех, кто предпочитает заниматься в компании, мы предлагаем
-						широкий выбор тренировок в залах групповых программ:
-					</p>
+					<h2 class="stock-slider-sec__title title title_center">Групповые тренировки</h2>
+					<p class="stock-slider-sec__subtitle"></p> 
 				</div>
 				<div class="stock-slider__wrap">
 					<div class="stock-slider__container _container">
-						<div class="stock-slider _swiper d-flex">
+						<div class="fg-slider _swiper d-flex">
 						<? 
 							if ($fprogr) {
 								$fprogrIndex = 0;

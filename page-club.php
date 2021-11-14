@@ -89,7 +89,7 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="connection__img">
-					<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card-img.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card-img.png?_v=1633466607061" alt=""></picture>
+					<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card-img.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card-img.png?_v=1633466608000" alt=""></picture>
 					</div>
 				</div>
 			</div>

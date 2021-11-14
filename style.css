@@ -214,11 +214,15 @@ h4 {
 .title::after {
   content: "";
   position: absolute;
-  left: calc(50% - 80px);
+  left: 0;
   bottom: -20px;
   width: 161px;
   height: 1px;
   background: #69A71A;
+}
+
+.title_center::after { 
+  left: calc(50% - 80px);
 }
 
 .title-block {

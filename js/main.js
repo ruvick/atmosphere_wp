@@ -781,6 +781,31 @@ let sliderStock = new Swiper('.stock-slider', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+
+
+// Сюда пишем класс нашего слайдера и меняем переменную
+let sliderFG = new Swiper('.fg-slider', {
+
+	observer: true,
+	observeParents: true,
+	slidesPerView: 2,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 2000,
+	loop: true,
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+});
+
 // ======================================================================================================================
 
 

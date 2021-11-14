@@ -187,6 +187,7 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
         // ->set_max(2) // Можно будет выбрать только 2 поста
         ->add_fields( array(
           Field::make('image', 'zone_galery_img', 'Изображение' )->set_width(30),
+          Field::make('text', 'zone_galery_txt', 'Текст')->set_width(30),
       ) ),
   ));
 

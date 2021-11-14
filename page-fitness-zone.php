@@ -73,7 +73,7 @@ get_header(); ?>
 				</div>
 				<div class="stock-slider__wrap">
 					<div class="stock-slider__container _container">
-						<div class="stock-slider _swiper d-flex">
+						<div class="fg-slider _swiper d-flex">
 						<? 
 							
 								$fprogrIndex = 0;
@@ -90,8 +90,8 @@ get_header(); ?>
 							?>
 						</div>
 					</div>
-					<div class="swiper-button swiper-button-next"></div>
-					<div class="swiper-button swiper-button-prev"></div>
+					<div class="swiper-button swiper-button-next swiper-button-next_1"></div>
+					<div class="swiper-button swiper-button-prev swiper-button-prev_1"></div>
 				</div>
 			</section>
 
@@ -128,7 +128,7 @@ get_header(); ?>
 				</div>
 				<div class="stock-slider__wrap">
 					<div class="stock-slider__container _container">
-						<div class="fg-slider _swiper d-flex">
+						<div class="stock-slider _swiper d-flex">
 						<? 
 							if ($fprogr) {
 								$fprogrIndex = 0;

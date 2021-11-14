@@ -795,8 +795,8 @@ let sliderFG = new Swiper('.fg-slider', {
 	loop: true,
 
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-button-next_1',
+		prevEl: '.swiper-button-prev_1',
 	},
 
 	on: {

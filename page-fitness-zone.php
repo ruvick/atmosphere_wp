@@ -146,8 +146,8 @@ get_header(); ?>
 							?>
 						</div>
 					</div>
-					<div class="swiper-button swiper-button-next"></div>
-					<div class="swiper-button swiper-button-prev"></div>
+					<div class="swiper-button swiper-button-next swiper-button-next_2"></div>
+					<div class="swiper-button swiper-button-prev swiper-button-prev_2"></div>
 				</div>
 			</section>
 			<?}?>

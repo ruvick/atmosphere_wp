@@ -747,8 +747,8 @@ let sliderStock = new Swiper('.stock-slider', {
 	//},
 	// Arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-button-next_2',
+		prevEl: '.swiper-button-prev_2',
 	},
 	/*
 	breakpoints: {

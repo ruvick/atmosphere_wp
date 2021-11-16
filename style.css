@@ -3409,7 +3409,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .menu-list a {
   font-family: "MyriadPro";
   display: block;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
   color: #fff;
   padding: 5px 0px 5px 36px;
@@ -3469,8 +3469,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .header__popup-link {
   min-width: 163px;
   min-height: 34px;
-  background: #272a2d;
-  border: 1px solid #fff;
+  /* background: #272a2d; */
+  /* border: 1px solid #fff; */
   margin-top: 12px;
 }
 

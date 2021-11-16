@@ -11,7 +11,7 @@
 					
 					<? $tel = carbon_get_theme_option("as_phone_2"); 
 					if (!empty($tel)){?><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="header__phone"><? echo $tel; ?></a><?}?>
-					<a href="#callback" class="header__popup-link btn _popup-link">Заявка On-Line</a>
+					<a href="#callback" class="header__popup-link btn _popup-link">Оставить заявку</a>
 				</div>
 				<div class="menu__icon icon-menu">
 					<span></span>

@@ -32,7 +32,8 @@ get_header(); ?>
 			}
 			?> 
 			<h2>Наши карты</h2>
-			<div class="club-cards-block__row d-flex">
+			
+			<!-- <div class="club-cards-block__row d-flex">
 				<? $clubCards = carbon_get_theme_option('complex_club_cards');
 				if ($clubCards) {
 					$clubCardsIndex = 0;
@@ -56,6 +57,79 @@ get_header(); ?>
 					}
 				}
 				?>
+			</div> -->
+		</div>
+	</section>
+	
+	<section class = "card_new_section" id = "card_new_section">
+		<div class="_container">
+		<div class="maincard_new">
+				<div class="card_blk">
+					<div class="card_circle bezlim"></div>
+					<h3>БЕЗЛИМИТНАЯ</h3>
+					<ul>
+						<li>Посещение всех зон клуба будни с 8-00 до 22-00 выходные с 9-00 до 21-00</li>
+						<li>Групповые занятия по расписанию</li>
+						<li>Вводное персональное занятие</li>
+						<li>Посещение сауны</li>
+						<li>Заморозка до 30 дней</li>
+						<li>Клубный браслет при первой регистрации</li>
+					</ul>
+					<span class = "snoska">* период использования от 1 до 12 мес</span>
+
+					<a href="#callback" class = "btn _popup-link">Подробнее</a>
+				</div>
+
+				<div class="card_blk">
+					<div class="card_circle dey"></div>
+					<h3>ДНЕВНАЯ</h3>
+					<ul>
+						<li>Посещение всех зон клуба будни с 8-00 до 17-00 выходные с 9-00 до 17-00</li>
+						<li>Групповые занятия по расписанию</li>
+						<li>Вводное персональное занятие</li>
+						<li>Посещение сауны</li>
+						<li>Заморозка до 30 дней</li>
+						<li>Клубный браслет при первой регистрации</li>
+					</ul>
+					<span class = "snoska">* период использования от 1до 12мес</span>
+
+					<a href="#callback" class = "btn _popup-link">Подробнее</a>
+				</div>
+
+				<div class="card_blk">
+					<div class="card_circle vip"></div>
+					<h3>VIP-КАРТА</h2>
+					<ul>
+						<li>Посещение всех зон клуба будни с 8-00 до 22-00 выходные с 9-00 до 21-00</li>
+						<li>Групповые занятия по расписанию</li>
+						<li>Вводное персональное занятие</li>
+						<li>Посещение сауны</li>
+						<li>5 персональных занятий бесплатно</li>
+						<li>Один раз в месяц купон «Гостевой визит»</li>
+						<li>Заморозка до 60 дней</li>
+						<li>Клубный браслет при первой регистрации</li>
+					</ul>
+					<span class = "snoska">* период использования 12 мес</span>
+
+					<a href="#callback" class = "btn _popup-link">Подробнее</a>
+				</div>
+
+				<div class="card_blk">
+					<div class="card_circle ten"></div>
+					<h3>КАРТА ТИНЕЙДЖЕРА</h3>
+					<ul>
+						<li>Посещение всех зон клуба будни с 8-00 до 20-00 выходные с 9-00 до 20-00</li>
+						<li>Групповые занятия по расписанию</li>
+						<li>Посещение сауны</li>
+						<li>Для детей с 12 до 15 лет занятия проводятся только с тренером</li>
+						<li>Заморозка до 30 дней</li>
+						<li>Клубный браслет при первой регистрации</li>
+					</ul>
+					<span class = "snoska">* Возраст от 12 до 16 лет
+							<br/>* период использования 12 мес</span>
+
+					<a href="#callback" class = "btn _popup-link">Подробнее</a>
+				</div>
 			</div>
 		</div>
 	</section>

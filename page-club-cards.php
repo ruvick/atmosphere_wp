@@ -91,7 +91,7 @@ get_header(); ?>
 						<li>Заморозка до 30 дней</li>
 						<li>Клубный браслет при первой регистрации</li>
 					</ul>
-					<span class = "snoska">* период использования от 1до 12мес</span>
+					<span class = "snoska">* период использования от 1 до 12мес</span>
 
 					<a href="#callback" class = "btn _popup-link">Подробнее</a>
 				</div>

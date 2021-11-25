@@ -68,7 +68,7 @@ get_header(); ?>
 
 			<section id="stock-slider-sec" class="stock-slider-sec">
 				<div class="_container">
-					<h2 class="stock-slider-sec__title title title_center">Фото галерея</h2>
+					<h2 class="stock-slider-sec__title title title_center">Галерея ATMOSFERA</h2>
 					<p class="stock-slider-sec__subtitle"></p> 
 				</div>
 				<div class="stock-slider__wrap">

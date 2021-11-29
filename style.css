@@ -4431,6 +4431,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 5;
 }
 
+.advant-sec__line-subtitle {
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.6;
+  z-index: 5;
+}
+
 ._no-webp .advant-sec__item:nth-child(1){
   background-image: url("img/advant/01.jpg"); }
 
@@ -5126,6 +5135,8 @@ body {
     flex: 0 1 32%;}
   .team-sec__col {
     flex: 0 1 33.333%;}
+  .advant-sec__item h3 {
+    font-size: 26px;}
 }
 
 @media (max-width: 1150px) {
@@ -5171,6 +5182,8 @@ body {
             flex: 0 1 24.8%;
     margin-bottom: 5px;
   }
+  .advant-sec__item h3 {
+    font-size: 22px;}
 }
 
 @media (max-width: 1100px) {
@@ -5315,6 +5328,11 @@ body {
   .connection__block {
     padding: 38px 15px 48px 45px;
   }
+  .advant-sec__item h3 {
+    font-size: 20px;}
+  .advant-sec__line-subtitle {
+    font-size: 14px;
+    line-height: 1.5;}
 }
 
 @media (max-width: 940px) {
@@ -5397,8 +5415,7 @@ body {
   }
 
   .advant-sec__item h3 {
-    font-size: 26px;
-    line-height: 1;
+    font-size: 18px;
   }
   .team-card__body {
     flex: 0 1 38%;}
@@ -5470,9 +5487,9 @@ body {
   }
 
   .header__contacts {
-    -webkit-box-flex: 0;
+/*    -webkit-box-flex: 0;
         -ms-flex: 0 0 133px;
-            flex: 0 0 133px;
+            flex: 0 0 133px;*/
     margin-left: auto;
     margin-right: 15px;
   }
@@ -5768,7 +5785,7 @@ body {
   }
 
   .advant-sec__item h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .connection__block {
@@ -5945,6 +5962,9 @@ body {
     -webkit-transition: right 0.8s;
     -o-transition: right 0.8s;
     transition: right 0.8s;
+  }
+  .advant-sec__item h3 {
+    font-size: 14px;
   }
 }
 

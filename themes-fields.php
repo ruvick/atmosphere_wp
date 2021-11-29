@@ -177,8 +177,19 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
 
   // ));
 
+  Container::make('post_meta', 'club', 'Доп поля')
+  ->show_on_template(array('page-club.php'))
+      ->add_fields(array(   
+      Field::make( 'complex', 'complex_club_galery', "Фото галерея" )
+        // ->set_max(2) // Можно будет выбрать только 2 поста
+        ->add_fields( array(
+          Field::make('image', 'club_galery_img', 'Изображение' )->set_width(30),
+          Field::make('text', 'club_galery_txt', 'Текст')->set_width(30),
+      ) ),
+  ));
+
   Container::make('post_meta', 'zone', 'Доп поля')
-  // ->show_on_template(array('single-galery.php'))
+  ->show_on_template(array('page-fitness-zone.php'))
       ->add_fields(array(   
       Field::make('text', 'zone_subtitle', 'Подзаголовок в банере') 
         ->set_width(33),

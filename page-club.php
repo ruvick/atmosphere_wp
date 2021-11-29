@@ -11,7 +11,7 @@ get_header(); ?>
 
 <main class="page">
 
-	<section id="club-sec" class="banner-bg club-sec">
+	<section id="club-sec" class="banner-bg club-sec"> 
 		<div class="banner-bg__nuar_blk nuar_blk"></div>
 		<div class="banner-bg__container _container">
 			<h1 class="title"><? the_title();?></h1>
@@ -38,17 +38,21 @@ get_header(); ?>
 					<div class="advant-sec__icon icon-advant-01"></div>
 					<div class="advant-sec__line"></div>
 					<h3>
-						Опытные <br>
-						тренеры
+						3 В 1
 					</h3>
+					<p class="advant-sec__line-subtitle">
+						FITNESS ZONE <br>
+						BEAUTY ZONE <br>
+						CAFÉ ZONE
+					</p>
 				</div>
 				<div class="advant-sec__item _bgi d-flex">
 					<div class="nuar_blk"></div>
 					<div class="advant-sec__icon icon-advant-02"></div>
 					<div class="advant-sec__line"></div>
 					<h3>
-						Современное <br>
-						оборудование
+						3 <br>
+						ЭТАЖА ФИТНЕСА
 					</h3>
 				</div>
 				<div class="advant-sec__item _bgi d-flex">
@@ -56,8 +60,8 @@ get_header(); ?>
 					<div class="advant-sec__icon icon-advant-03"></div>
 					<div class="advant-sec__line"></div>
 					<h3>
-						Удобный <br>
-						график
+						СОВРЕМЕННАЯ <br>
+						КОНЦЕПЦИЯ
 					</h3>
 				</div>
 				<div class="advant-sec__item _bgi d-flex">
@@ -65,15 +69,16 @@ get_header(); ?>
 					<div class="advant-sec__icon icon-advant-04"></div>
 					<div class="advant-sec__line"></div>
 					<h3>
-						Выгодные <br>
-						цены
-					</h3>
+						ДРУЖНАЯ <br>
+						КОМАНДА <br>
+						ПРОФЕССИОНАЛОВ
+					</h3>		
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="connection" class="connection">
+<!-- 	<section id="connection" class="connection">
 		<div class="_container">
 			<div class="connection__block d-flex">
 				<div class="connection__descp">
@@ -93,9 +98,43 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section id="stock-slider-sec" class="stock-slider-sec">
+		<? 
+		$clubGalery = carbon_get_post_meta(get_the_ID(),"complex_club_galery");
+		if (!empty($clubGalery)) {?>
+
+			<section id="stock-slider-sec" class="stock-slider-sec">
+				<div class="_container">
+					<h2 class="stock-slider-sec__title title title_center">Галерея ATMOSFERA</h2>
+					<p class="stock-slider-sec__subtitle"></p> 
+				</div>
+				<div class="stock-slider__wrap">
+					<div class="stock-slider__container _container">
+						<div class="fg-slider _swiper d-flex">
+						<? 
+								$fprogrIndex = 0;
+								foreach ($clubGalery as $item) {
+									?>
+									<div class="card-bg-item slider__slide _bgi" style="background-image: url(<?php echo wp_get_attachment_image_src($item['club_galery_img'], 'full')[0];?>);">
+										<div class="nuar_blk"></div>
+										<p><? echo $item['club_galery_txt']; ?></p>
+									</div>
+									<?
+									$fprogrIndex++; 
+								}
+							
+							?>
+						</div>
+					</div>
+					<div class="swiper-button swiper-button-next swiper-button-next_1"></div>
+					<div class="swiper-button swiper-button-prev swiper-button-prev_1"></div>
+				</div>
+			</section>
+
+			<?}?>
+
+<!-- 		<section id="stock-slider-sec" class="stock-slider-sec">
 			<div class="_container">
 				<h2>Акции</h2>
 			</div>
@@ -139,7 +178,7 @@ get_header(); ?>
 				<div class="swiper-button swiper-button-next"></div>
 				<div class="swiper-button swiper-button-prev"></div>
 			</div>
-		</section>
+		</section -->
 
 		<?php get_template_part('template-parts/contacts-section');?>
 

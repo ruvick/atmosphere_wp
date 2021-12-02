@@ -38,7 +38,7 @@ get_header(); ?>
 					<div class="advant-sec__icon icon-advant-01"></div>
 					<div class="advant-sec__line"></div>
 					<h3>
-						3 В 1
+						3 В 1 <br> &nbsp;
 					</h3>
 					<p class="advant-sec__line-subtitle">
 						FITNESS ZONE <br>
@@ -51,9 +51,9 @@ get_header(); ?>
 					<div class="advant-sec__icon icon-advant-02"></div>
 					<div class="advant-sec__line"></div>
 					<h3>
-						3 <br>
-						ЭТАЖА ФИТНЕСА
+						3 ЭТАЖА <br>ФИТНЕСА 
 					</h3>
+					<p class="advant-sec__line-subtitle"> </p>
 				</div>
 				<div class="advant-sec__item _bgi d-flex">
 					<div class="nuar_blk"></div>
@@ -63,16 +63,17 @@ get_header(); ?>
 						СОВРЕМЕННАЯ <br>
 						КОНЦЕПЦИЯ
 					</h3>
+					<p class="advant-sec__line-subtitle"> </p>
 				</div>
 				<div class="advant-sec__item _bgi d-flex">
 					<div class="nuar_blk"></div>
 					<div class="advant-sec__icon icon-advant-04"></div>
 					<div class="advant-sec__line"></div>
 					<h3>
-						ДРУЖНАЯ <br>
-						КОМАНДА <br>
+						ДРУЖНАЯ КОМАНДА <br>
 						ПРОФЕССИОНАЛОВ
-					</h3>		
+					</h3>
+					<p class="advant-sec__line-subtitle"> </p>	
 				</div>
 			</div>
 		</div>

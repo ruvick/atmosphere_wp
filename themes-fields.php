@@ -189,7 +189,7 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
   ));
 
   Container::make('post_meta', 'zone', 'Доп поля')
-  ->show_on_template(array('page-fitness-zone.php'))
+  ->show_on_template(array('page-fitness-zone.php', "page-cafe-zone.php", "page-beauty-zone.php"))
       ->add_fields(array(   
       Field::make('text', 'zone_subtitle', 'Подзаголовок в банере') 
         ->set_width(33),

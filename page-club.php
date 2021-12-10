@@ -117,7 +117,7 @@ get_header(); ?>
 								$fprogrIndex = 0;
 								foreach ($clubGalery as $item) {
 									?>
-									<div class="card-bg-item slider__slide _bgi" style="background-image: url(<?php echo wp_get_attachment_image_src($item['club_galery_img'], 'full')[0];?>);">
+									<div class="card-bg-item card-bg-item_gall slider__slide _bgi" style="background-image: url(<?php echo wp_get_attachment_image_src($item['club_galery_img'], 'full')[0];?>);">
 										<div class="nuar_blk"></div>
 										<p><? echo $item['club_galery_txt']; ?></p>
 									</div>

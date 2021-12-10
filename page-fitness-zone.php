@@ -79,7 +79,7 @@ get_header(); ?>
 								$fprogrIndex = 0;
 								foreach ($zoneGalery as $item) {
 									?>
-									<div class="card-bg-item slider__slide _bgi" style="background-image: url(<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'full')[0];?>);">
+									<div class="card-bg-item card-bg-item_gall slider__slide _bgi" style="background-image: url(<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'full')[0];?>);">
 										<div class="nuar_blk"></div>
 										<p><? echo $item['zone_galery_txt']; ?></p>
 									</div>

@@ -701,7 +701,7 @@ let slider = new Swiper('.slider-team', {
 
 	observer: true,
 	observeParents: true,
-	slidesPerView: 4,
+	slidesPerView: 1.3,
 	spaceBetween: 0,
 	autoHeight: true,
 	speed: 2000,
@@ -720,27 +720,34 @@ let slider = new Swiper('.slider-team', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-	/*
+	
 	breakpoints: {
-		320: {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
+		340: {
+			slidesPerView: 1.5,
 		},
-		768: {
-			slidesPerView: 2,
-			spaceBetween: 20,
+		375: {
+			slidesPerView: 1.8,
 		},
-		992: {
+		480: {
+			slidesPerView: 2.3,
+		},
+		540: {
+			slidesPerView: 2.6,
+		},
+		612: {
+			slidesPerView: 2.8,
+		},
+		700: {
+			slidesPerView: 3.6,
+		},
+		769: {
 			slidesPerView: 3,
-			spaceBetween: 20,
 		},
-		1268: {
+		1400: {
 			slidesPerView: 4,
-			spaceBetween: 30,
 		},
 	},
-	*/
+	
 	on: {
 		lazyImageReady: function () {
 			ibg();
@@ -763,7 +770,7 @@ let sliderStock = new Swiper('.stock-slider', {
 
 	observer: true,
 	observeParents: true,
-	slidesPerView: 2,
+	slidesPerView: 1.1,
 	spaceBetween: 0,
 	autoHeight: true,
 	speed: 2000,
@@ -782,27 +789,19 @@ let sliderStock = new Swiper('.stock-slider', {
 		nextEl: '.swiper-button-next_2',
 		prevEl: '.swiper-button-prev_2',
 	},
-	/*
+	
 	breakpoints: {
-		320: {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
+		360: {
+			slidesPerView: 1.3,
 		},
-		768: {
+		535: {
+			slidesPerView: 1.5,
+		},
+		700: {
 			slidesPerView: 2,
-			spaceBetween: 20,
-		},
-		992: {
-			slidesPerView: 3,
-			spaceBetween: 20,
-		},
-		1268: {
-			slidesPerView: 4,
-			spaceBetween: 30,
 		},
 	},
-	*/
+	
 	on: {
 		lazyImageReady: function () {
 			ibg();
@@ -820,7 +819,7 @@ let sliderFG = new Swiper('.fg-slider', {
 
 	observer: true,
 	observeParents: true,
-	slidesPerView: 2,
+	slidesPerView: 1.1,
 	spaceBetween: 0,
 	autoHeight: true,
 	speed: 2000,
@@ -829,6 +828,18 @@ let sliderFG = new Swiper('.fg-slider', {
 	navigation: {
 		nextEl: '.swiper-button-next_1',
 		prevEl: '.swiper-button-prev_1',
+	},
+
+		breakpoints: {
+		360: {
+			slidesPerView: 1.3,
+		},
+		535: {
+			slidesPerView: 1.5,
+		},
+		700: {
+			slidesPerView: 2,
+		},
 	},
 
 	on: {

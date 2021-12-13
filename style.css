@@ -5009,7 +5009,14 @@ body {
     font-size: 12px;
 }
 
-
+.policy-section__link {
+    display: block;
+    margin-top: 25px;
+}
+.policy-section__link:hover {
+    text-decoration: underline;
+    color: #69a71a;
+}
 
 
 

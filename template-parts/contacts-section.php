@@ -84,7 +84,7 @@
 					<?}?> 
 				</ul>
 				
-				<a href="<?php echo get_template_directory_uri();?>/img/oferta-atmosfera-fitnes.docx" class="ofert">Договор публичной оферты</a>
+				<a href="<?php echo get_permalink(125);?>" class="ofert">Договор публичной оферты</a>
 			</div>
 <!-- 			<? $sal_depart = carbon_get_theme_option("as_sales_department"); 
 			if (!empty($sal_depart)){?>

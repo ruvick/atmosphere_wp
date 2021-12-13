@@ -1,20 +1,6 @@
 <?php get_header(); ?>
 
-<? if (empty($_REQUEST["show"])) {?>
-	<main class="page">	
-		<section id="about-full" class="about-full">
-			<div class="container">
-				<div class="about-full__img">
-					<img src="<?php echo get_template_directory_uri();?>/img/logo.svg" alt="">
-					<h1>Сайт в разработке!</h1>
-				</div>
-			</div>
-		</section>  
-	</main>  
-
-<? } else { ?>
-
-	<?php get_template_part('template-parts/header-section');?>  
+	<?php get_template_part('template-parts/header-section');?>   
 
 	<main class="page">
 
@@ -143,7 +129,7 @@
 	</section>
 
 	<?php get_template_part('template-parts/contacts-section');?>
-<? } ?>
+
 </main>
 
 <?php get_footer(); ?> 

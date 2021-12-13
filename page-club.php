@@ -70,7 +70,7 @@ get_header(); ?>
 					<div class="advant-sec__icon icon-advant-04"></div>
 					<div class="advant-sec__line"></div>
 					<h3>
-						ДРУЖНАЯ КОМАНДА <br>
+						<span class="advant-sec__line-partic">ДРУЖНАЯ</span> КОМАНДА <br>
 						ПРОФЕССИОНАЛОВ
 					</h3>
 					<p class="advant-sec__line-subtitle"> </p>	

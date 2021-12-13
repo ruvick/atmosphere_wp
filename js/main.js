@@ -704,7 +704,7 @@ let slider = new Swiper('.slider-team', {
 	slidesPerView: 1.3,
 	spaceBetween: 0,
 	autoHeight: true,
-	speed: 2000,
+	speed: 1000,
 	// touchRatio: 0,
 	// simulateTouch: false,
 	loop: true,
@@ -773,7 +773,7 @@ let sliderStock = new Swiper('.stock-slider', {
 	slidesPerView: 1.1,
 	spaceBetween: 0,
 	autoHeight: true,
-	speed: 2000,
+	speed: 1000,
 	// touchRatio: 0,
 	// simulateTouch: false,
 	loop: true,
@@ -822,7 +822,7 @@ let sliderFG = new Swiper('.fg-slider', {
 	slidesPerView: 1.1,
 	spaceBetween: 0,
 	autoHeight: true,
-	speed: 2000,
+	speed: 1000,
 	loop: true,
 
 	navigation: {

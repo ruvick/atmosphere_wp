@@ -9,7 +9,7 @@
 			<div class="fullscreen__container _container">
 				<div class="info-index__logo"></div>
 <!-- 			<h4>
-				Пробное посещение <br>
+				Пробное посещение <br> 
 				БЕСПЛАТНО
 			</h4> -->
 			<div class="info-index__btn-block d-flex">

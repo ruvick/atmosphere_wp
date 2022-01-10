@@ -16,7 +16,7 @@ get_header(); ?>
 		<div class="banner-bg__container _container">
 			<h1 class="title"><? the_title();?></h1>
 			<p class="banner-bg__subtitle">
-				Приобретай карту и тренеруйся <br> 
+				Приобретай карту и тренируйся <br> 
 				так как удобно тебе
 			</p>
 			<a href="#callback" class="banner-bg__btn _popup-link btn">Связаться с менеджером</a>

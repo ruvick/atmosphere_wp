@@ -598,8 +598,11 @@ if (unisend_btn !== undefined)
 			var params = new URLSearchParams()
 			params.append('action', 'sendphone')
 			params.append('nonce', allAjax.nonce)
-			params.append('name', unisend_form.getElementsByTagName("name")[0])
-			params.append('tel', unisend_form.getElementsByTagName("tel")[0])
+			params.append('name', unisend_form.querySelectorAll("input[name=name]")[0].value)
+			params.append('tel', unisend_form.querySelectorAll("input[name=tel]")[0].value)
+
+			console.log(unisend_form.querySelectorAll("input[name=name]")[0].value);
+			console.log(unisend_form.querySelectorAll("input[name=tel]")[0].value);
 
 			xhr.onload = function(e) {
 				unisend_form.getElementsByClassName("form__line")[0].style.display="none";

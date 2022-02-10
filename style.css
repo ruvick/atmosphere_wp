@@ -5035,16 +5035,10 @@ body {
 }
 
 
-
-
-
-
-
-
-
+/* 
 @media (max-width: 414px) {
   .about-full__img h1 {
-    font-size: 35px; } }
+    font-size: 35px; } } */
 /*Заглушка END */
 
 
@@ -5054,6 +5048,14 @@ body {
 .stock-slider-sec__subtitle {
   margin-bottom: 50px;
 }
+
+.ofert {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+
 
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,

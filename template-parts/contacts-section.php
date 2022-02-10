@@ -85,7 +85,7 @@
 				</ul>
 				
 				<a href="<?php echo get_permalink(125);?>" class="ofert">Договор публичной оферты</a>
-				<a href="<?php echo get_permalink(125);?>" class="ofert regulations">Правила ФК</a>
+				<a href="<?php echo get_permalink(146);?>" class="ofert regulations">Правила ФК</a>
 			</div>
 <!-- 			<? $sal_depart = carbon_get_theme_option("as_sales_department"); 
 			if (!empty($sal_depart)){?>

@@ -28,8 +28,8 @@ get_header(); ?>
 				if (!empty($op_wkdays)){?> будни: <? echo $op_wkdays; ?>, <?}?> 
 				<? $op_wkends = carbon_get_theme_option("as_club_opening_weekends"); 
 				if (!empty($op_wkends)){?> выходные: <? echo $op_wkends; ?></li><?}?> 
-				<? $sal_depart = carbon_get_theme_option("as_sales_department"); 
-				if (!empty($sal_depart)){?><li>Часы работы отдела продаж: ежедневно: <? echo $sal_depart; ?></li><?}?> 
+				<!-- <? $sal_depart = carbon_get_theme_option("as_sales_department"); 
+				if (!empty($sal_depart)){?><li>Часы работы отдела продаж: ежедневно: <? echo $sal_depart; ?></li><?}?>  -->
 				<? $inn = carbon_get_theme_option("as_inn"); if (!empty($inn)){?><li>ИНН: <strong><? echo $inn; ?></strong></li><?}?>
 				<? $kpp = carbon_get_theme_option("as_kpp"); if (!empty($kpp)){?><li>КПП: <strong><? echo $kpp; ?></strong></li><?}?>
 				<? $ogrn = carbon_get_theme_option("as_orgn"); if (!empty($ogrn)){?><li>ОРГН: <strong><? echo $ogrn; ?></strong></li><?}?>
@@ -38,7 +38,8 @@ get_header(); ?>
 				<? $bik = carbon_get_theme_option("as_bik"); if (!empty($bik)){?><li>БИК: <strong><? echo $bik; ?></strong></li><?}?>
 				<? $bank = carbon_get_theme_option("as_bank"); if (!empty($bank)){?><li>БАНК: <strong><? echo $bank; ?></strong></li><?}?>
 				<? $mail = carbon_get_theme_option("as_email"); if (!empty($mail)){?><li>Email: <strong><a href="mailto:<? echo $mail; ?>"><? echo $mail; ?></strong></a></li><?}?>
-				<? $tel = carbon_get_theme_option("as_phone_1"); $tel2 = carbon_get_theme_option("as_phone_2"); if (!empty($tel)){?><li>Тел: <strong><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel; ?></strong></a> <strong><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel2); ?>"><? echo $tel2; ?></strong></a></li><?}?> 
+				<? $tel = carbon_get_theme_option("as_phone_1"); $tel2 = carbon_get_theme_option("as_phone_2"); if (!empty($tel)){?><li>Тел: <strong><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel; ?></strong></a></li><?}?> 
+				<? $tel2 = carbon_get_theme_option("as_phone_2"); if (!empty($tel)){?><li>Тел: <strong><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel2); ?>"><? echo $tel2; ?></strong></a></li><?}?> 
 			</ul>
 
 			<div class="contacts-sec__map" id="map-contacts"></div>

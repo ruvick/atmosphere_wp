@@ -77,7 +77,7 @@ get_header(); ?>
 									<img src="<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'large')[0]; ?>" alt="Картинка фотогалереи">
 								</a>
 								<?
-								$$zoneGaleryIndex++;  
+								$$zoneGaleryIndex++;   
 							}
 						}
 						?>

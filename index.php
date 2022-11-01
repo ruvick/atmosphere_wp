@@ -77,9 +77,10 @@
 					<p class="about__item__subtitle">Более 100м²</p>
 					<div class="about__list-block d-flex">
 						<ul>
-							<li>Горячие, холодные напитки</li>
+							<li>Горячие, холодные напитки</li> 
 							<li>Завтраки</li>
 							<li>Полезные перекусы</li>
+							<li>Спортивное питание</li>
 						</ul>
 					</div>
 				</a>

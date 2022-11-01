@@ -7,7 +7,7 @@ Template Post Type: page
 
 get_header(); ?>
 
-<?php get_template_part('template-parts/header-section');?>
+<?php get_template_part('template-parts/header-section');?> 
 
 <main class="page">
 
@@ -33,7 +33,7 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section id="connection" class="connection">
+	<!-- <section id="connection" class="connection">
 		<div class="_container">
 			<div class="connection__block d-flex">
 				<div class="connection__descp connection__form-descp">
@@ -59,7 +59,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<? 
 		$zoneGalery = carbon_get_post_meta(get_the_ID(),"complex_zone_galery");
@@ -73,9 +73,9 @@ get_header(); ?>
 							$zoneGaleryIndex = 0;
 							foreach ($zoneGalery as $item) {
 								?>
-								<div class="photo-gallery-sec__item-img">
+								<a href="<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'large')[0]; ?>" data-fslightbox="gallery" class="photo-gallery-sec__item-img">
 									<img src="<?php echo wp_get_attachment_image_src($item['zone_galery_img'], 'large')[0]; ?>" alt="Картинка фотогалереи">
-								</div>
+								</a>
 								<?
 								$$zoneGaleryIndex++; 
 							}

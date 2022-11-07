@@ -67,7 +67,7 @@ get_header(); ?>
 			<section id="photo-gallery-sec" class="photo-gallery-sec">
 				<div class="_container">
 					<h2>Фото галерея</h2> 
-					<div class="photo-gallery-sec__row d-flex">
+					<div class="photo-gallery-sec__row d-flex"> 
 						<? 
 						if ($zoneGalery) {
 							$zoneGaleryIndex = 0;

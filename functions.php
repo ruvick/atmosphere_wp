@@ -67,8 +67,8 @@ function my_assets()
 
 	// Подключение стилей 
 
-	$style_version = "1.0.38";
-	$scrypt_version = "1.0.38";
+	$style_version = "1.0.39";
+	$scrypt_version = "1.0.39";
 
 	// wp_enqueue_style("style-modal", get_template_directory_uri() . "/css/jquery.arcticmodal-0.3.css", array(), $style_version, 'all'); //Модальные окна (стили)
 	// wp_enqueue_style("style-lightbox", get_template_directory_uri() . "/css/lightbox.min.css", array(), $style_version, 'all'); //Лайтбокс (стили)
@@ -79,7 +79,7 @@ function my_assets()
 
 	// Подключение скриптов
 
-	wp_enqueue_script('jquery'); 
+	wp_enqueue_script('jquery');  
 
 	// wp_enqueue_script('amodal', get_template_directory_uri() . '/js/jquery.arcticmodal-0.3.min.js', array(), $scrypt_version, true); //Модальные окна
 	// wp_enqueue_script('mask', get_template_directory_uri() . '/js/jquery.inputmask.bundle.js', array(), $scrypt_version, true); //маска для инпутов

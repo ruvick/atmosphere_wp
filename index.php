@@ -94,7 +94,7 @@
 
 		</div>
 
-		<div class="team__row d-flex">
+		<!-- <div class="team__row d-flex">
 			<div class="team__container _container">
 				<div class="slider-team _swiper">
 					<? $team = carbon_get_theme_option('complex_team');
@@ -122,13 +122,13 @@
 					}
 					?>
 				</div>
-				<a href="<?php echo get_permalink(36);?>" class="slider-team__btn btn">Все тренеры</a>
+				<a href="<?php echo get_permalink(453);?>" class="slider-team__btn btn">Все тренеры</a>
 			</div>
 			<div class="swiper-button swiper-button-next"></div>
 			<div class="swiper-button swiper-button-prev"></div>
 		</div>
 
-	</section>
+	</section> -->
 
 	<?php get_template_part('template-parts/contacts-section');?>
 

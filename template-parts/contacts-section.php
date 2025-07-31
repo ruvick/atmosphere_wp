@@ -100,9 +100,9 @@
 					<ul>
 						<li>Контакты:</li>
 						<? $tel = carbon_get_theme_option("as_phone_1"); 
-						if (!empty($tel)){?><li><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts-sec__phone"><? echo $tel; ?></a></li><?}?> 
+						if (!empty($tel)){?><li><a href="tel:+<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts-sec__phone"><? echo $tel; ?></a></li><?}?> 
 						<? $tel2 = carbon_get_theme_option("as_phone_2"); 
-						if (!empty($tel2)){?><li><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel2); ?>" class="contacts-sec__phone"><? echo $tel2; ?></a></li><?}?> 
+						if (!empty($tel2)){?><li><a href="tel:+<? echo preg_replace('/[^0-9]/', '', $tel2); ?>" class="contacts-sec__phone"><? echo $tel2; ?></a></li><?}?> 
 						<? $mail = carbon_get_theme_option("as_email");
 						if (!empty($mail)) { ?><li><a href="mailto:<? echo $mail; ?>" class="contacts-sec__email"><? echo $mail; ?></a></li><? } ?>
 					</ul>
